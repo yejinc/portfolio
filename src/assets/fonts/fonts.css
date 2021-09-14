@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Druk Wide Web';
+  src: local('Druk Wide Web'), local('Druk Wide Bold'), local('Druk Wide'),
+    url('/src/assets/fonts/DrukWide-Bold-Web.woff2') format('woff2'),
+    url('/src/assets/fonts/DrukWide-Bold-Web.woff') format('woff'),
+    url('/src/assets/fonts/DrukWide-Bold-Web.eot') format('eot'),
+    url('/src/assets/fonts/DrukWide-Bold-Web.eot?#iefix')
+      format('embedded-opentype'),
+    url('/src/assets/fonts/DrukWide-Bold-Web.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.DrukWide-Bold-Web {
+  font-family: 'Druk Wide Web';
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
