@@ -1,0 +1,276 @@
+// common(all devices)
+
+@mixin text-style-body() {
+  font-family: $font-family-body;
+  font-weight: $font-weight-body;
+  font-size: $font-size-body;
+  line-height: $font-height-body;
+  letter-spacing: $font-spacing-body;
+}
+
+@mixin text-style-link() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub-bold;
+  font-size: $font-size-link;
+  line-height: $font-height-link;
+  letter-spacing: $font-spacing-link;
+}
+
+// mobile
+
+@mixin text-style-h1() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $font-size-h1;
+  line-height: $font-height-h1;
+  letter-spacing: $font-spacing-h1;
+}
+
+@mixin text-style-h1-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $font-size-h1-sub;
+  line-height: $font-height-h1-sub;
+  letter-spacing: $font-spacing-h1-sub;
+}
+
+@mixin text-style-h2() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $font-size-h2;
+  line-height: $font-height-h2;
+  letter-spacing: $font-spacing-h2;
+}
+
+@mixin text-style-h2-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $font-size-h2-sub;
+  line-height: $font-height-h2-sub;
+  letter-spacing: $font-spacing-h2-sub;
+}
+
+@mixin text-style-h3() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $font-size-h3;
+  line-height: $font-height-h3;
+  letter-spacing: $font-spacing-h3;
+}
+
+@mixin text-style-h3-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $font-size-h3-sub;
+  line-height: $font-height-h3-sub;
+  letter-spacing: $font-spacing-h3-sub;
+}
+
+@mixin text-style-h4() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $font-size-h4;
+  line-height: $font-height-h4;
+  letter-spacing: $font-spacing-h4;
+}
+
+@mixin text-style-h4-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $font-size-h4-sub;
+  line-height: $font-height-h4-sub;
+  letter-spacing: $font-spacing-h4-sub;
+}
+
+@mixin text-style-h5() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $font-size-h5;
+  line-height: $font-height-h5;
+  letter-spacing: $font-spacing-h5;
+}
+
+@mixin text-style-h6() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $font-size-h6;
+  line-height: $font-height-h6;
+  letter-spacing: $font-spacing-h6;
+}
+
+@mixin text-style-caption() {
+  font-family: $font-family-body;
+  font-weight: $font-weight-body-bold;
+  font-size: $font-size-caption;
+  line-height: $font-height-caption;
+  letter-spacing: $font-spacing-caption;
+}
+
+// desktop
+
+@mixin text-style-desktop-h1() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $desktop-font-size-caption;
+  line-height: $desktop-font-height-caption;
+  letter-spacing: $desktop-font-spacing-caption;
+}
+
+@mixin text-style-desktop-h1-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $desktop-font-size-h1-sub;
+  line-height: $desktop-font-height-h1-sub;
+  letter-spacing: $desktop-font-spacing-h1-sub;
+}
+
+@mixin text-style-desktop-h2() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $desktop-font-size-h2;
+  line-height: $desktop-font-height-h2;
+  letter-spacing: $desktop-font-spacing-h2;
+}
+
+@mixin text-style-desktop-h2-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $desktop-font-size-h2-sub;
+  line-height: $desktop-font-height-h2-sub;
+  letter-spacing: $desktop-font-spacing-h2-sub;
+}
+
+@mixin text-style-desktop-h3() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $desktop-font-size-h3;
+  line-height: $desktop-font-height-h3;
+  letter-spacing: $desktop-font-spacing-h3;
+}
+
+@mixin text-style-desktop-h3-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $desktop-font-size-h3-sub;
+  line-height: $desktop-font-height-h3-sub;
+  letter-spacing: $desktop-font-spacing-h3-sub;
+}
+
+@mixin text-style-desktop-h4() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $desktop-font-size-h4;
+  line-height: $desktop-font-height-h4;
+  letter-spacing: $desktop-font-spacing-h4;
+}
+
+@mixin text-style-desktop-h4-sub() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub;
+  font-size: $desktop-font-size-h4-sub;
+  line-height: $desktop-font-height-h4-sub;
+  letter-spacing: $desktop-font-spacing-h4-sub;
+}
+
+@mixin text-style-desktop-h5() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $desktop-font-size-h5;
+  line-height: $desktop-font-height-h5;
+  letter-spacing: $desktop-font-spacing-h5;
+}
+
+@mixin text-style-desktop-h6() {
+  font-family: $font-family-header;
+  font-weight: $font-weight-header;
+  font-size: $desktop-font-size-h6;
+  line-height: $desktop-font-height-h6;
+  letter-spacing: $desktop-font-spacing-h6;
+}
+
+@mixin text-style-desktop-caption() {
+  font-family: $font-family-body;
+  font-weight: $font-weight-body;
+  font-size: $desktop-font-size-caption;
+  line-height: $desktop-font-height-caption;
+  letter-spacing: $desktop-font-spacing-caption;
+}
+
+@mixin text-style($type, $color: false) {
+  @if ($type == body) {
+    @include text-style-body;
+  }
+  @if ($type == link) {
+    @include text-style-link;
+  }
+  @if ($type == h1) {
+    @include text-style-h1;
+  }
+  @if ($type == h1-sub) {
+    @include text-style-h1-sub;
+  }
+  @if ($type == h2) {
+    @include text-style-h2;
+  }
+  @if ($type == h2-sub) {
+    @include text-style-h2-sub;
+  }
+  @if ($type == h3) {
+    @include text-style-h3;
+  }
+  @if ($type == h3-sub) {
+    @include text-style-h3-sub;
+  }
+  @if ($type == h4) {
+    @include text-style-h4;
+  }
+  @if ($type == h4-sub) {
+    @include text-style-h4-sub;
+  }
+  @if ($type == h5) {
+    @include text-style-h5;
+  }
+  @if ($type == h6) {
+    @include text-style-h6;
+  }
+  @if ($type == caption) {
+    @include text-style-caption;
+  }
+  @if ($type == desktop-h1) {
+    @include text-style-desktop-h1;
+  }
+  @if ($type == desktop-h1-sub) {
+    @include text-style-desktop-h1-sub;
+  }
+  @if ($type == desktop-h2) {
+    @include text-style-desktop-h2;
+  }
+  @if ($type == desktop-h2-sub) {
+    @include text-style-desktop-h2-sub;
+  }
+  @if ($type == desktop-h3) {
+    @include text-style-desktop-h3;
+  }
+  @if ($type == desktop-h3-sub) {
+    @include text-style-desktop-h3-sub;
+  }
+  @if ($type == desktop-h4) {
+    @include text-style-desktop-h4;
+  }
+  @if ($type == desktop-h4-sub) {
+    @include text-style-desktop-h4-sub;
+  }
+  @if ($type == desktop-h5) {
+    @include text-style-desktop-h5;
+  }
+  @if ($type == desktop-h6) {
+    @include text-style-desktop-h6;
+  }
+  @if ($type == desktop-caption) {
+    @include text-style-desktop-caption;
+  }
+
+  @if type-of($color ≠ false) {
+    color: $color;
+  }
+}
