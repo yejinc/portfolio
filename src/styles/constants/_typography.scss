@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
-@font-face {
-  font-family: 'Druk Wide Web';
-  src: local('Druk Wide Web'), local('Druk Wide Bold'), local('Druk Wide');
-  src: url('../fonts/DrukWide-Bold-Web.woff2') format('woff2'),
-    url('../fonts/DrukWide-Bold-Web.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: 'Druk Wide Web';
+//   src: local('Druk Wide Web'), local('Druk Wide Bold'), local('Druk Wide');
+//   src: url('../fonts/DrukWide-Bold-Web.woff') format('woff'),
+//     url('../fonts/DrukWide-Bold-Web.woff2') format('woff2');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
 
 // @font-face {
 //   font-family: 'Tiempos';
@@ -19,7 +19,7 @@
 // }
 
 // global
-$font-family-header: 'Tiempos', serif;
+$font-family-header: 'Druk Wide Web', serif;
 $font-weight-header: 700;
 $font-family-sub: 'Courier New', monospace;
 $font-weight-sub: 300;

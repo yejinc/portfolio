@@ -8,14 +8,6 @@
   letter-spacing: $font-spacing-body;
 }
 
-@mixin text-style-link() {
-  font-family: $font-family-sub;
-  font-weight: $font-weight-sub-bold;
-  font-size: $font-size-link;
-  line-height: $font-height-link;
-  letter-spacing: $font-spacing-link;
-}
-
 // mobile
 
 @mixin text-style-h1() {
@@ -96,6 +88,14 @@
   font-size: $font-size-h6;
   line-height: $font-height-h6;
   letter-spacing: $font-spacing-h6;
+}
+
+@mixin text-style-link() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub-bold;
+  font-size: $font-size-link;
+  line-height: $font-height-link;
+  letter-spacing: $font-spacing-link;
 }
 
 @mixin text-style-caption() {
@@ -188,6 +188,14 @@
   letter-spacing: $desktop-font-spacing-h6;
 }
 
+@mixin text-style-desktop-link() {
+  font-family: $font-family-sub;
+  font-weight: $font-weight-sub-bold;
+  font-size: $desktop-font-size-link;
+  line-height: $desktop-font-height-link;
+  letter-spacing: $desktop-font-spacing-link;
+}
+
 @mixin text-style-desktop-caption() {
   font-family: $font-family-body;
   font-weight: $font-weight-body;
@@ -200,9 +208,7 @@
   @if ($type == body) {
     @include text-style-body;
   }
-  @if ($type == link) {
-    @include text-style-link;
-  }
+
   @if ($type == h1) {
     @include text-style-h1;
   }
@@ -233,6 +239,11 @@
   @if ($type == h6) {
     @include text-style-h6;
   }
+
+  @if ($type == link) {
+    @include text-style-link;
+  }
+
   @if ($type == caption) {
     @include text-style-caption;
   }
@@ -265,6 +276,9 @@
   }
   @if ($type == desktop-h6) {
     @include text-style-desktop-h6;
+  }
+  @if ($type == desktop-link) {
+    @include text-style-desktop-link;
   }
   @if ($type == desktop-caption) {
     @include text-style-desktop-caption;
