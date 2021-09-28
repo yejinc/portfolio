@@ -1,25 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-
-// @font-face {
-//   font-family: 'Druk Wide Web';
-//   src: local('Druk Wide Web'), local('Druk Wide Bold'), local('Druk Wide');
-//   src: url('../fonts/DrukWide-Bold-Web.woff') format('woff'),
-//     url('../fonts/DrukWide-Bold-Web.woff2') format('woff2');
-//   font-weight: 700;
-//   font-style: normal;
-//   font-stretch: normal;
-// }
-
-// @font-face {
-//   font-family: 'Tiempos';
-//   src: local('Tiempos Text'), local('TiemposText'), local('Tiempos'),
-//     url('../fonts/Tiempos-Text/TiemposText-Bold.woff') format('woff');
-//   font-weight: 700;
-//   font-style: normal;
-// }
+// @font-face declaration @ fonts.css
 
 // global
-$font-family-header: 'Druk Wide Web', serif;
+$font-family-header: 'Druk Wide Web', sans-serif;
 $font-weight-header: 700;
 $font-family-sub: 'Courier New', monospace;
 $font-weight-sub: 300;
@@ -33,10 +15,6 @@ $font-weight-body-bold: 700;
 $font-size-body: 16px;
 $font-height-body: 24px;
 $font-spacing-body: -0.005em;
-
-$font-size-link: 16px;
-$font-height-link: 18px;
-$font-spacing-link: -0.005em;
 
 //mobile
 
@@ -79,6 +57,10 @@ $font-spacing-h5: -0.005em;
 $font-size-h6: 16px;
 $font-height-h6: 20px;
 $font-spacing-h6: -0.005em;
+
+$font-size-link: 14px;
+$font-height-link: 16px;
+$font-spacing-link: -0.005em;
 
 $font-size-caption: 12px;
 $font-height-caption: 21px;
@@ -125,6 +107,10 @@ $desktop-font-spacing-h5: -0.005em;
 $desktop-font-size-h6: 16px;
 $desktop-font-height-h6: 20px;
 $desktop-font-spacing-h6: -0.005em;
+
+$desktop-font-size-link: 16px;
+$desktop-font-height-link: 18px;
+$desktop-font-spacing-link: -0.005em;
 
 $desktop-font-size-caption: 14px;
 $desktop-font-height-caption: 21px;
