@@ -1,16 +1,13 @@
-/* FONTS */
-
-/* Font: Lato */
+/* Typography: Lato */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
-/* Font: Druk Wide Web */
+/* Typography: Druk Wide Web */
 
 @font-face {
   font-family: 'Druk Wide Web';
-  src: local('Druk Wide Web'), local('Druk Wide Bold'), local('Druk Wide');
-  src: url('/src/styles/fonts/DrukWide-Bold-Web.woff') format('woff'),
-    url('/src/styles/fonts/DrukWide-Bold-Web.woff2') format('woff2');
+  src: url('DrukWide-Bold-Web.woff') format('woff'),
+    url('DrukWide-Bold-Web.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -27,11 +24,11 @@
 
 @font-face {
   font-family: 'portfolio';
-  src: url('/src/styles/fonts/portfolio.eot');
-  src: url('/src/styles/fonts/portfolio.eot#iefix') format('embedded-opentype'),
-    url('/src/styles/fonts/portfolio.ttf?nd9r79') format('truetype'),
-    url('/src/styles/fonts/portfolio.woff?nd9r79') format('woff'),
-    url('/src/styles/fonts/portfolio.svg?nd9r79#portfolio') format('svg');
+  src: url('portfolio.eot');
+  src: url('portfolio.eot#iefix') format('embedded-opentype'),
+    url('portfolio.ttf?nd9r79') format('truetype'),
+    url('portfolio.woff?nd9r79') format('woff'),
+    url('portfolio.svg?nd9r79#portfolio') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
