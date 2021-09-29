@@ -51,18 +51,15 @@ i {
 
 .ic-arrow-md:before {
   content: '\e900';
-  color: #331b3f;
 }
 .ic-arrow-sm:before {
   content: '\e901';
-  color: #331b3f;
 }
 .ic-book:before {
   content: '\e902';
 }
 .ic-close:before {
   content: '\e903';
-  color: #331b3f;
 }
 .ic-compass:before {
   content: '\e904';
@@ -72,7 +69,6 @@ i {
 }
 .ic-menu:before {
   content: '\e906';
-  color: #331b3f;
 }
 .ic-publish:before {
   content: '\e907';
