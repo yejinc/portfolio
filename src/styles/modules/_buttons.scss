@@ -1,0 +1,168 @@
+%btn-base {
+  @include inline-flex;
+  padding: 0 16px;
+  font-weight: 700;
+  border-radius: 2px;
+
+  .button-content {
+    @include inline-flex;
+    mix-blend-mode: difference;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+.btn-outlined-ic-right {
+  @extend %btn-base;
+  display: relative;
+  border: 1px solid $main-coral;
+  overflow: hidden;
+  color: $main-dark-purple;
+  backdrop-filter: blur(16px);
+  background-color: rgba($ghost-white, 0.2);
+  transition: all 300ms ease-in-out;
+
+  .ic-arrow-sm {
+    width: 20px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+  &::after {
+    content: '';
+    @include pos-center;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    // filter: blur(16px);
+    z-index: $button-hover-circle-index;
+    transition: all 300ms ease-in-out;
+  }
+
+  &:not(:disabled):hover {
+    border-color: rgba($main-coral, 0.4);
+    color: $main-coral;
+
+    &::after {
+      content: '';
+      width: 60px;
+      height: 60px;
+      filter: blur(16px);
+      background-color: $main-dark-purple;
+      border-radius: 50%;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+  &:not(:disabled):active {
+    border-color: $main-dark-purple;
+    background-color: $main-dark-purple;
+  }
+}
+
+.btn-outlined {
+  @extend %btn-base;
+  display: relative;
+  border: 1px solid $main-coral;
+  color: $main-dark-purple;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  background-color: rgba($ghost-white, 0.2);
+  transition: all 300ms ease-in-out;
+
+  &::after {
+    content: '';
+    @include pos-center;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    filter: blur(16px);
+    z-index: $button-hover-circle-index;
+    transition: all 300ms ease-in-out;
+  }
+
+  &:not(:disabled):hover {
+    border-color: rgba($main-coral, 0.4);
+    color: $main-coral;
+
+    &::after {
+      content: '';
+      width: 60px;
+      height: 60px;
+      background-color: $main-dark-purple;
+      border-radius: 50%;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+  &:not(:disabled):active {
+    border-color: $main-dark-purple;
+    background-color: $main-dark-purple;
+  }
+}
+
+.btn-filled-ic-right {
+  @extend %btn-base;
+  display: relative;
+  overflow: hidden;
+  color: $main-coral;
+  background-color: $main-coral;
+  transition: all 300ms ease-in-out;
+
+  .ic-arrow-sm {
+    width: 20px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+  &:not(:disabled):hover {
+    background-color: $main-dark-purple;
+  }
+
+  &:not(:disabled):active {
+    opacity: 0.4;
+  }
+}
+.btn-filled {
+  @extend %btn-base;
+  display: relative;
+  overflow: hidden;
+  color: $main-coral;
+  background-color: $main-coral;
+  transition: all 300ms ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $main-dark-purple;
+  }
+
+  &:not(:disabled):active {
+    opacity: 0.4;
+  }
+}
+
+// button styles
+.btn-24 {
+  height: 24px;
+
+  .button-content {
+    @include text-style(link);
+  }
+}
+
+.btn-32 {
+  height: 32px;
+
+  .button-content {
+    @include text-style(desktop-link);
+  }
+}
+
+.btn-40 {
+  height: 40px;
+  .button-content {
+    @include text-style(desktop-link);
+  }
+}
