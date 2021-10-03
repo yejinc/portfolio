@@ -1,0 +1,23 @@
+.basic-text-title {
+  @include text-style(h2, $grey-6);
+  margin-bottom: 30px;
+}
+
+.basic-text-desc {
+  @include flex(start);
+  @include text-style(body, $grey-6);
+  height: 100%;
+}
+
+@include responsive(T) {
+  .basic-text-title {
+    @include text-style(h1);
+  }
+}
+
+@include responsive(D) {
+  .basic-text-title {
+    @include text-style(desktop-h1);
+    margin-bottom: 0;
+  }
+}
