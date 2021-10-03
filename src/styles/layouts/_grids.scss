@@ -27,7 +27,7 @@
 $gutter: 30px;
 
 $sm-columns: 4;
-$sm-margin: 15px;
+// $sm-margin: 15px;
 
 $md-columns: 6;
 $md-margin: 24px;
@@ -41,7 +41,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
 
 .container {
   width: 100%;
-  padding: 0 $sm-margin;
+  padding: 0 math.div($gutter, 2);
   margin: 0 auto;
 
   .row {
@@ -49,7 +49,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     flex-wrap: wrap;
   }
 
-  [class^='col-'] {
+  [class^='col-']:not([class^='col-sm']) {
     padding: 0 math.div($gutter, 2);
   }
 
