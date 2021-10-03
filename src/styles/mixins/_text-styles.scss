@@ -111,9 +111,9 @@
 @mixin text-style-desktop-h1() {
   font-family: $font-family-header;
   font-weight: $font-weight-header;
-  font-size: $desktop-font-size-caption;
-  line-height: $desktop-font-height-caption;
-  letter-spacing: $desktop-font-spacing-caption;
+  font-size: $desktop-font-size-h1;
+  line-height: $desktop-font-height-h1;
+  letter-spacing: $desktop-font-spacing-h1;
 }
 
 @mixin text-style-desktop-h1-sub() {
@@ -247,39 +247,51 @@
   @if ($type == caption) {
     @include text-style-caption;
   }
+
   @if ($type == desktop-h1) {
     @include text-style-desktop-h1;
   }
+
   @if ($type == desktop-h1-sub) {
     @include text-style-desktop-h1-sub;
   }
+
   @if ($type == desktop-h2) {
     @include text-style-desktop-h2;
   }
+
   @if ($type == desktop-h2-sub) {
     @include text-style-desktop-h2-sub;
   }
+
   @if ($type == desktop-h3) {
     @include text-style-desktop-h3;
   }
+
   @if ($type == desktop-h3-sub) {
     @include text-style-desktop-h3-sub;
   }
+
   @if ($type == desktop-h4) {
     @include text-style-desktop-h4;
   }
+
   @if ($type == desktop-h4-sub) {
     @include text-style-desktop-h4-sub;
   }
+
   @if ($type == desktop-h5) {
     @include text-style-desktop-h5;
   }
+
   @if ($type == desktop-h6) {
     @include text-style-desktop-h6;
   }
+
   @if ($type == desktop-link) {
     @include text-style-desktop-link;
   }
+
   @if ($type == desktop-caption) {
     @include text-style-desktop-caption;
   }
