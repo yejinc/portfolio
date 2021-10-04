@@ -21,6 +21,7 @@ $font-spacing-body: -0.005em;
 $font-size-h1: 32px;
 $font-height-h1: 40px;
 $font-spacing-h1: 0;
+$font-transform-h1: uppercase;
 
 $font-size-h1-sub: 28px;
 $font-height-h1-sub: 35px;
@@ -29,6 +30,7 @@ $font-spacing-h1-sub: -0.01em;
 $font-size-h2: 28px;
 $font-height-h2: 35px;
 $font-spacing-h2: -0.01em;
+$font-transform-h2: uppercase;
 
 $font-size-h2-sub: 24px;
 $font-height-h2-sub: 30px;
@@ -37,6 +39,7 @@ $font-spacing-h2-sub: -0.01em;
 $font-size-h3: 24px;
 $font-height-h3: 30px;
 $font-spacing-h3: -0.01em;
+$font-transform-h3: uppercase;
 
 $font-size-h3-sub: 18px;
 $font-height-h3-sub: 20px;
@@ -45,6 +48,7 @@ $font-spacing-h3-sub: -0.005em;
 $font-size-h4: 20px;
 $font-height-h4: 30px;
 $font-spacing-h4: -0.005em;
+$font-transform-h4: uppercase;
 
 $font-size-h4-sub: 16px;
 $font-height-h4-sub: 18px;
@@ -53,10 +57,12 @@ $font-spacing-h4-sub: -0.005em;
 $font-size-h5: 18px;
 $font-height-h5: 22.5px;
 $font-spacing-h5: -0.005em;
+$font-transform-h5: lowercase;
 
 $font-size-h6: 16px;
 $font-height-h6: 20px;
 $font-spacing-h6: -0.005em;
+$font-transform-h6: lowercase;
 
 $font-size-link: 14px;
 $font-height-link: 16px;
@@ -71,6 +77,7 @@ $font-spacing-caption: 0;
 $desktop-font-size-h1: 40px;
 $desktop-font-height-h1: 50px;
 $desktop-font-spacing-h1: 0;
+$desktop-font-transform-h1: uppercase;
 
 $desktop-font-size-h1-sub: 32px;
 $desktop-font-height-h1-sub: 40px;
@@ -79,6 +86,7 @@ $desktop-font-spacing-h1-sub: -0.01em;
 $desktop-font-size-h2: 32px;
 $desktop-font-height-h2: 40px;
 $desktop-font-spacing-h2: 0;
+$desktop-font-transform-h2: uppercase;
 
 $desktop-font-size-h2-sub: 28px;
 $desktop-font-height-h2-sub: 35px;
@@ -87,6 +95,7 @@ $desktop-font-spacing-h2-sub: -0.01em;
 $desktop-font-size-h3: 28px;
 $desktop-font-height-h3: 35px;
 $desktop-font-spacing-h3: -0.01em;
+$desktop-font-transform-h3: uppercase;
 
 $desktop-font-size-h3-sub: 20px;
 $desktop-font-height-h3-sub: 25px;
@@ -95,6 +104,7 @@ $desktop-font-spacing-h3-sub: -0.005em;
 $desktop-font-size-h4: 24px;
 $desktop-font-height-h4: 30px;
 $desktop-font-spacing-h4: -0.01em;
+$desktop-font-transform-h4: lowercase;
 
 $desktop-font-size-h4-sub: 16px;
 $desktop-font-height-h4-sub: 24px;
@@ -103,10 +113,12 @@ $desktop-font-spacing-h4-sub: -0.005em;
 $desktop-font-size-h5: 20px;
 $desktop-font-height-h5: 25px;
 $desktop-font-spacing-h5: -0.005em;
+$desktop-font-transform-h5: lowercase;
 
 $desktop-font-size-h6: 16px;
 $desktop-font-height-h6: 20px;
 $desktop-font-spacing-h6: -0.005em;
+$desktop-font-transform-h6: lowercase;
 
 $desktop-font-size-link: 16px;
 $desktop-font-height-link: 18px;
