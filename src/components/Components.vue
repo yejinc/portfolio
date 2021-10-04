@@ -79,6 +79,127 @@
       </div>
     </div>
   </div>
+
+  <!-- text components -->
+
+  <div class="container">
+    <!-- text component: basic  -->
+    <div class="row">
+      <div class="col-sm-4 col-lg-4">
+        <h2 class="text-basic-title">
+          text title
+        </h2>
+      </div>
+      <div class="col-sm-4 col-lg-8">
+        <p class="text-basic-desc">
+          Basic style text block description
+        </p>
+      </div>
+    </div>
+
+    <!-- text component: numbered list -->
+
+    <div class="row">
+      <div class="col-sm-4 col-lg-4">
+        <h2 class="text-list-title">
+          numberedlist title
+        </h2>
+      </div>
+      <div class="col-sm-4 col-lg-8">
+        <dl class="text-list-content">
+          <div class="content-1">
+            <dt class="content-1-title">
+              <h4 class="title-number">01.</h4>
+              <h4 class="title-text">title 1</h4>
+            </dt>
+            <dd class="content-1-desc">
+              <p>
+                St. agur blue cheese cheese and wine camembert de normandie.
+                Hard cheese cheese triangles mozzarella cheese and biscuits
+                airedale blue castello cauliflower cheese cheese and biscuits.
+              </p>
+            </dd>
+          </div>
+          <div class="content-2">
+            <dt class="content-2-title">
+              <h4 class="title-number">02.</h4>
+              <h4 class="title-text">title 2</h4>
+            </dt>
+            <dd class="content-2-desc">
+              <p>
+                St. agur blue cheese cheese and wine camembert de normandie.
+                Hard cheese cheese triangles mozzarella cheese and biscuits
+                airedale blue castello cauliflower cheese cheese and biscuits.
+              </p>
+            </dd>
+          </div>
+          <div class="content-3">
+            <dt class="content-3-title">
+              <h4 class="title-number">03.</h4>
+              <h4 class="title-text">title 3</h4>
+            </dt>
+            <dd class="content-3-desc">
+              <p>
+                St. agur blue cheese cheese and wine camembert de normandie.
+                Hard cheese cheese triangles mozzarella cheese and biscuits
+                airedale blue castello cauliflower cheese cheese and biscuits.
+              </p>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <!-- text component: unordered list -->
+
+    <div class="row">
+      <div class="col-sm-4 col-lg-4">
+        <h2 class="text-list-title">
+          unordered list title
+        </h2>
+      </div>
+      <div class="col-sm-4 col-lg-8">
+        <dl class="text-list-content">
+          <div class="content-1">
+            <dt class="content-1-title">
+              <h4 class="title-text">🌿 title 1</h4>
+            </dt>
+            <dd class="content-1-desc">
+              <p>
+                St. agur blue cheese cheese and wine camembert de normandie.
+                Hard cheese cheese triangles mozzarella cheese and biscuits
+                airedale blue castello cauliflower cheese cheese and biscuits.
+              </p>
+            </dd>
+          </div>
+          <div class="content-2">
+            <dt class="content-2-title">
+              <h4 class="title-text">💪 title 2</h4>
+            </dt>
+            <dd class="content-2-desc">
+              <p>
+                St. agur blue cheese cheese and wine camembert de normandie.
+                Hard cheese cheese triangles mozzarella cheese and biscuits
+                airedale blue castello cauliflower cheese cheese and biscuits.
+              </p>
+            </dd>
+          </div>
+          <div class="content-3">
+            <dt class="content-3-title">
+              <h4 class="title-text">👾 title 3</h4>
+            </dt>
+            <dd class="content-3-desc">
+              <p>
+                St. agur blue cheese cheese and wine camembert de normandie.
+                Hard cheese cheese triangles mozzarella cheese and biscuits
+                airedale blue castello cauliflower cheese cheese and biscuits.
+              </p>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

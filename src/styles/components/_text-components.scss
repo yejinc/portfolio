@@ -1,0 +1,121 @@
+// common style
+.text {
+  &-basic-title,
+  &-list-title {
+    @include flex(start);
+    word-break: break-all;
+    -ms-word-break: break-all;
+  }
+}
+
+// teext component: basic
+
+.text-basic {
+  &-title {
+    @include flex(start);
+    @include text-style(h2, $grey-6);
+    margin-bottom: 30px;
+  }
+
+  &-desc {
+    @include flex(start);
+    @include text-style(body, $grey-6);
+    height: 100%;
+  }
+
+  @include responsive(D) {
+    &-title {
+      @include text-style(desktop-h1);
+      margin-bottom: 0;
+    }
+  }
+}
+
+// common list element: text-list-title
+
+.text-list {
+  &-title {
+    @include text-style(h2, $grey-6);
+    margin-bottom: 84px;
+  }
+
+  &-content {
+    @for $i from 1 through 5 {
+      .content-#{$i} {
+        margin-bottom: 48px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &-title {
+          @include inline-flex;
+          margin-bottom: 30px;
+
+          .title-number {
+            @include text-style(h6, $grey-4);
+            width: 50px;
+            margin-right: 4px;
+          }
+
+          .title-text {
+            @include text-style(h6, $grey-6);
+          }
+        }
+
+        &-desc {
+          @include text-style(body, $grey-6);
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    &-title {
+      @include text-style(h1);
+    }
+
+    &-content {
+      @for $i from 1 through 5 {
+        .content-#{$i} {
+          &-title {
+            .title-number,
+            .title-text {
+              @include text-style(h5);
+            }
+
+            .title-number {
+              width: 62px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    &-title {
+      @include text-style(desktop-h1);
+      margin-bottom: 0;
+    }
+
+    &-content {
+      padding-top: 8px; //NOTE: only to visually align with title
+
+      @for $i from 1 through 5 {
+        .content-#{$i} {
+          margin-bottom: 72px;
+
+          &-title {
+            .title-number,
+            .title-text {
+              @include text-style(desktop-h4);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// text component: numbered list & unordered list
