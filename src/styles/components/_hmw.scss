@@ -1,18 +1,30 @@
 .hmw {
-  $grid-margin: 15px;
+  $half-gutter: 15px;
+  $container-margin-md: 24px;
 
   @include flex;
   text-align: center;
-  width: calc(100% + $grid-margin * 2);
-  margin: 0 -#{$grid-margin};
-  padding: 90px $grid-margin;
+  width: calc(100% + $half-gutter * 2);
+  margin: 0 -#{$half-gutter};
+  padding: 90px $half-gutter;
   background: radial-gradient(
       50% 50% at 50% 50%,
       rgba($black, 0.3) 0%,
       rgba($black, 0) 100%
     ),
     linear-gradient(0deg, $grey-2, $grey-2);
+
   &-text {
     @include text-style(h4, $grey-5);
+  }
+
+  @include responsive(T) {
+    width: calc(100% + $half-gutter * 2 +$container-margin-md * 2);
+    margin: 0 -#{$half-gutter + $container-margin-md};
+    padding: 110px $half-gutter + $container-margin-md;
+
+    &-text {
+      @include text-style(h3);
+    }
   }
 }
