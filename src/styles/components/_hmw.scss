@@ -1,0 +1,18 @@
+.hmw {
+  $grid-margin: 15px;
+
+  @include flex;
+  text-align: center;
+  width: calc(100% + $grid-margin * 2);
+  margin: 0 -#{$grid-margin};
+  padding: 90px $grid-margin;
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba($black, 0.3) 0%,
+      rgba($black, 0) 100%
+    ),
+    linear-gradient(0deg, $grey-2, $grey-2);
+  &-text {
+    @include text-style(h4, $grey-5);
+  }
+}
