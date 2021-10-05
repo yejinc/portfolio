@@ -224,6 +224,18 @@
         </div>
       </div>
     </div>
+
+    <!-- hmw -->
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="hmw">
+          <h4 class="hmw-text">
+            How might we go to beach and diive into the water?
+          </h4>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
