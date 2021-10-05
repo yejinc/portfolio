@@ -1,8 +1,16 @@
-<template> </template>
+<template>
+  <Components />
+</template>
 
 <script>
+import Components from './components/Components.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+
+  components: {
+    Components
+  }
 }
 </script>
 
