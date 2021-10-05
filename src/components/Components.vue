@@ -210,14 +210,19 @@
           <div class="list-image-bg">
             <div class="list-image">
               <img
-                src="@/assets/images/default/default-2.jpg"
+                src="@/assets/images/default/default-5.jpg"
                 alt="List image"
               />
             </div>
           </div>
           <div class="list-text">
             <h4 class="list-text-title">list 1</h4>
-            <p class="list-text-desc">First line <br />Second line</p>
+            <p class="list-text-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              vero tempora, aspernatur pariatur placeat laudantium, reiciendis
+              minima nisi nam officia odit sapiente voluptas dolorem eligendi
+              aperiam? Tempore voluptatum eligendi voluptas?
+            </p>
           </div>
         </div>
       </div>
