@@ -1,7 +1,7 @@
 <template>
   <!-- button components -->
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="buttons">
         <div class="btn-group-24">
@@ -78,7 +78,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- text components -->
 
@@ -200,6 +200,29 @@
       </div>
     </div>
   </div>
+
+  <!-- image-list component -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-lg-8">
+        <div class="image-list">
+          <div class="list-image-bg">
+            <div class="list-image">
+              <img
+                src="@/assets/images/default/default-2.jpg"
+                alt="List image"
+              />
+            </div>
+          </div>
+          <div class="list-text">
+            <h4 class="list-text-title">list 1</h4>
+            <p class="list-text-desc">First line <br />Second line</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -211,6 +234,7 @@ export default {
 <style lang="scss">
 body {
   background-color: $grey-1;
+  color: $grey-6;
 }
 
 .row {

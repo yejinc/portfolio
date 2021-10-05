@@ -1,0 +1,43 @@
+.image-list {
+  @include column-flex;
+
+  .list {
+    &-image {
+      @include flex;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: $black;
+
+      &-bg {
+        @include flex;
+        width: 120px;
+        height: 120px;
+        padding: 12px;
+        background-color: $black;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-text {
+      text-align: center;
+
+      &-title {
+        @include text-style(h4, $grey-6);
+        margin-bottom: 18px;
+      }
+
+      &-desc {
+        @include text-style(body, $grey-6);
+      }
+    }
+  }
+}
