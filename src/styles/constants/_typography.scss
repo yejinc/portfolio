@@ -16,6 +16,11 @@ $font-size-body: 16px;
 $font-height-body: 24px;
 $font-spacing-body: -0.005em;
 
+$font-size-h6: 16px;
+$font-height-h6: 20px;
+$font-spacing-h6: -0.005em;
+$font-transform-h6: lowercase;
+
 //mobile
 
 $font-size-h1: 32px;
@@ -58,11 +63,6 @@ $font-size-h5: 18px;
 $font-height-h5: 22.5px;
 $font-spacing-h5: -0.005em;
 $font-transform-h5: lowercase;
-
-$font-size-h6: 16px;
-$font-height-h6: 20px;
-$font-spacing-h6: -0.005em;
-$font-transform-h6: lowercase;
 
 $font-size-link: 14px;
 $font-height-link: 16px;
@@ -114,11 +114,6 @@ $desktop-font-size-h5: 20px;
 $desktop-font-height-h5: 25px;
 $desktop-font-spacing-h5: -0.005em;
 $desktop-font-transform-h5: lowercase;
-
-$desktop-font-size-h6: 16px;
-$desktop-font-height-h6: 20px;
-$desktop-font-spacing-h6: -0.005em;
-$desktop-font-transform-h6: lowercase;
 
 $desktop-font-size-link: 16px;
 $desktop-font-height-link: 18px;

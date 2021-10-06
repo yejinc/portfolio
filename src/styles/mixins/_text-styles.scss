@@ -296,10 +296,6 @@
     @include text-style-desktop-h5;
   }
 
-  @if ($type == desktop-h6) {
-    @include text-style-desktop-h6;
-  }
-
   @if ($type == desktop-link) {
     @include text-style-desktop-link;
   }
