@@ -240,10 +240,19 @@
     <!-- introduction -->
 
     <div class="row">
+      <div class="col-md-1 md-only" aria-hidden="true">
+        <div class="blank-column"></div>
+      </div>
       <div class="col-sm-4 col-md-4 col-lg-4">
         <div class="intro-logo">
-          <img src="@/assets/images/default/default-8.jpg" alt="" />
+          <img src="@/assets/images/default/default-3.jpg" alt="" />
         </div>
+      </div>
+      <div class="col-md-1 md-only" aria-hidden="true">
+        <div class="blank-column"></div>
+      </div>
+      <div class="col-md-1 md-only" aria-hidden="true">
+        <div class="blank-column"></div>
       </div>
       <div class="col-sm-4 col-md-4 col-lg-8">
         <h3 class="intro-text-title">
@@ -270,6 +279,9 @@
           </div>
         </dl>
       </div>
+      <div class="col-md-1 md-only" aria-hidden="true">
+        <div class="blank-column"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -282,7 +294,7 @@ export default {
 
 <style lang="scss">
 body {
-  background-color: $grey-1;
+  background-color: $white;
   color: $grey-6;
 }
 

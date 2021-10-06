@@ -15,7 +15,7 @@
   &-text-title {
     @include text-style(h3-sub, $grey-1);
     margin-bottom: 42px;
-    font-weight: 700;
+    // font-weight: 700;
   }
 
   &-list {
@@ -34,6 +34,28 @@
 
       dd {
         @include text-style(body, $grey-1);
+      }
+    }
+  }
+
+  @include responsive(T) {
+    &-logo {
+      margin-bottom: 80px;
+    }
+
+    &-text-title {
+      @include text-style(h1-sub);
+      margin-bottom: 60px;
+    }
+
+    &-list {
+      .list-item {
+        @include flex(start);
+        margin-bottom: 18px;
+
+        dt {
+          width: 120px;
+        }
       }
     }
   }
