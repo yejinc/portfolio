@@ -236,6 +236,41 @@
         </div>
       </div>
     </div>
+
+    <!-- introduction -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="intro-logo">
+          <img src="@/assets/images/default/default-8.jpg" alt="" />
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-8">
+        <h3 class="intro-text-title">
+          BMW is a German multinational company that produces luxury vehicles
+          and motorcycles.
+        </h3>
+
+        <dl class="intro-list">
+          <div class="list-item">
+            <dt>ROLE</dt>
+            <dd>Brand Management Intern</dd>
+          </div>
+          <div class="list-item">
+            <dt>DURATION</dt>
+            <dd>July - December 2017</dd>
+          </div>
+          <div class="list-item">
+            <dt>TAG</dt>
+            <dd>Digital Product, Brand Management, Marketing</dd>
+          </div>
+          <div class="list-item">
+            <dt>WEBSITE</dt>
+            <dd><a href="http://www.bmw.co.kr">http://www.bmw.co.kr</a></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
   </div>
 </template>
 
