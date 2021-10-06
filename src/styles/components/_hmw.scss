@@ -27,4 +27,24 @@
       @include text-style(h3);
     }
   }
+
+  @include responsive(T) {
+    width: calc(100% + $half-gutter * 2 +$container-margin-md * 2);
+    margin: 0 -#{$half-gutter + $container-margin-md};
+    padding: 110px $half-gutter + $container-margin-md;
+
+    &-text {
+      @include text-style(h3);
+    }
+  }
+
+  @include responsive(D) {
+    width: calc(100% + $half-gutter * 2);
+    margin: 0 -#{$half-gutter};
+    padding: 145px $half-gutter;
+
+    &-text {
+      @include text-style(desktop-h3);
+    }
+  }
 }
