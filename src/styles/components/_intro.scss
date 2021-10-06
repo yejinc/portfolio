@@ -59,4 +59,27 @@
       }
     }
   }
+
+  @include responsive(D) {
+    &-logo {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    &-text-title {
+      @include text-style(desktop-h1-sub);
+      margin-bottom: 60px;
+    }
+
+    &-list {
+      .list-item {
+        @include flex(start);
+        margin-bottom: 18px;
+
+        dt {
+          width: 160px;
+        }
+      }
+    }
+  }
 }
