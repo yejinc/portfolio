@@ -294,12 +294,15 @@
           —<br />
           Research
         </h5>
-      </div>
-      <div class="col-sm-4 col-md-4 col-lg-8">
         <p class="process-desc">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
           obcaecati ut! Iusto non ex eum ab debitis repellendus minima. Fugit.
         </p>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-8">
+        <div class="process-image">
+          <img src="@/assets/images/default/default-8.jpg" alt="" />
+        </div>
       </div>
     </div>
   </div>
