@@ -288,8 +288,8 @@
 
     <!-- process component: mobile & tablet -->
 
-    <div class="row">
-      <div class="col-sm-4 col-md-2 lg-hidden">
+    <div class="row lg-hidden">
+      <div class="col-sm-4 col-md-2">
         <div class="process-titles">
           <h6 class="process-day">DAY 1 - DAY 2</h6>
           <h5 class="process-stage">
@@ -299,7 +299,7 @@
           </h5>
         </div>
       </div>
-      <div class="col-sm-4 col-md-4 lg-hidden">
+      <div class="col-sm-4 col-md-4">
         <div class="process-desc-wrapper">
           <p class="process-desc">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
@@ -311,7 +311,7 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-4 lg-hidden">
+      <div class="col-sm-4">
         <div class="process-image">
           <img src="@/assets/images/default/default-8.jpg" alt="" />
         </div>
@@ -323,8 +323,8 @@
 
     <!-- process component: deesktop -->
 
-    <div class="row">
-      <div class="col-lg-4 lg-only">
+    <div class="row lg-only">
+      <div class="col-lg-4">
         <div class="process-titles">
           <h6 class="process-day">DAY 1 - DAY 2</h6>
           <h5 class="process-stage">
@@ -345,13 +345,11 @@
         </div>
       </div>
       <div class="col-lg-8">
-        <div class="col-sm-4 col-lg-8">
-          <div class="process-image">
-            <img src="@/assets/images/default/default-8.jpg" alt="" />
-          </div>
-          <div class="process-image">
-            <img src="@/assets/images/default/default-2.jpg" alt="" />
-          </div>
+        <div class="process-image">
+          <img src="@/assets/images/default/default-8.jpg" alt="" />
+        </div>
+        <div class="process-image">
+          <img src="@/assets/images/default/default-2.jpg" alt="" />
         </div>
       </div>
     </div>
