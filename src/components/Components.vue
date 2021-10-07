@@ -288,20 +288,33 @@
 
     <div class="row">
       <div class="col-sm-4 col-md-2 col-lg-4">
-        <h6 class="process-day">DAY 1 - DAY 2</h6>
-        <h5 class="process-stage">
-          Understand<br />
-          —<br />
-          Research
-        </h5>
-        <p class="process-desc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
-          obcaecati ut! Iusto non ex eum ab debitis repellendus minima. Fugit.
-        </p>
+        <div class="process-titles">
+          <h6 class="process-day">DAY 1 - DAY 2</h6>
+          <h5 class="process-stage">
+            Understand<br />
+            —<br />
+            Research
+          </h5>
+        </div>
       </div>
       <div class="col-sm-4 col-md-4 col-lg-8">
+        <div class="process-desc-wrapper">
+          <p class="process-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            animi natus culpa et ullam nulla cum tempore enim voluptates
+            recusandae, quasi, voluptas amet dignissimos ipsam expedita quis
+            corrupti. Quod iste blanditiis, modi in soluta optio alias ea hic
+            inventore eaque dolore dolorum, ipsum quas totam ullam neque
+            laboriosam ipsam esse?
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
         <div class="process-image">
           <img src="@/assets/images/default/default-8.jpg" alt="" />
+        </div>
+        <div class="process-image">
+          <img src="@/assets/images/default/default-2.jpg" alt="" />
         </div>
       </div>
     </div>
