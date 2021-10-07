@@ -283,6 +283,25 @@
         <div class="blank-column"></div>
       </div>
     </div>
+
+    <!-- process -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-2 col-lg-4">
+        <h6 class="process-day">DAY 1 - DAY 2</h6>
+        <h5 class="process-stage">
+          Understand<br />
+          —<br />
+          Research
+        </h5>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-8">
+        <p class="process-desc">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+          obcaecati ut! Iusto non ex eum ab debitis repellendus minima. Fugit.
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
