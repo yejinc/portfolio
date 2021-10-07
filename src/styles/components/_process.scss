@@ -2,6 +2,7 @@
   &-titles {
     @include column-flex(center, start);
     height: 100%;
+    margin-bottom: 30px;
   }
 
   &-day {
@@ -11,8 +12,6 @@
 
   &-stage {
     @include text-style(h5, $grey-1);
-
-    margin-bottom: 30px;
   }
 
   &-desc {
@@ -44,7 +43,7 @@
   }
 
   @include responsive(T) {
-    &-stage {
+    &-titles {
       margin-bottom: 0;
     }
 
@@ -57,6 +56,33 @@
     &-image {
       margin-bottom: 0;
       margin-top: 60px;
+    }
+  }
+
+  @include responsive(D) {
+    &-titles {
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    &-day {
+      @include text-style(desktop-link);
+    }
+
+    &-stage {
+      @include text-style(desktop-h4);
+    }
+
+    &-desc {
+      &-wrapper {
+        height: auto;
+      }
+    }
+
+    &-image {
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 }

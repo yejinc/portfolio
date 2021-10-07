@@ -286,8 +286,10 @@
 
     <!-- process -->
 
+    <!-- process component: mobile & tablet -->
+
     <div class="row">
-      <div class="col-sm-4 col-md-2 col-lg-4">
+      <div class="col-sm-4 col-md-2 lg-hidden">
         <div class="process-titles">
           <h6 class="process-day">DAY 1 - DAY 2</h6>
           <h5 class="process-stage">
@@ -297,7 +299,7 @@
           </h5>
         </div>
       </div>
-      <div class="col-sm-4 col-md-4 col-lg-8">
+      <div class="col-sm-4 col-md-4 lg-hidden">
         <div class="process-desc-wrapper">
           <p class="process-desc">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
@@ -309,12 +311,47 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 lg-hidden">
         <div class="process-image">
           <img src="@/assets/images/default/default-8.jpg" alt="" />
         </div>
         <div class="process-image">
           <img src="@/assets/images/default/default-2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- process component: deesktop -->
+
+    <div class="row">
+      <div class="col-lg-4 lg-only">
+        <div class="process-titles">
+          <h6 class="process-day">DAY 1 - DAY 2</h6>
+          <h5 class="process-stage">
+            Understand<br />
+            —<br />
+            Research
+          </h5>
+        </div>
+        <div class="process-desc-wrapper">
+          <p class="process-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            animi natus culpa et ullam nulla cum tempore enim voluptates
+            recusandae, quasi, voluptas amet dignissimos ipsam expedita quis
+            corrupti. Quod iste blanditiis, modi in soluta optio alias ea hic
+            inventore eaque dolore dolorum, ipsum quas totam ullam neque
+            laboriosam ipsam esse?
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="col-sm-4 col-lg-8">
+          <div class="process-image">
+            <img src="@/assets/images/default/default-8.jpg" alt="" />
+          </div>
+          <div class="process-image">
+            <img src="@/assets/images/default/default-2.jpg" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -344,5 +381,9 @@ export default {
   /* background-image: url('https://images.unsplash.com/photo-1546026423-cc4642628d2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHVuZGVyd2F0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60');
   background-size: cover;
   background-repeat: no-repeat; */
+}
+
+.process {
+  @include column-flex;
 }
 </style>
