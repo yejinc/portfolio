@@ -312,9 +312,8 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  background-color: $white;
-  color: $grey-6;
+.container {
+  background-color: $grey-4;
 }
 
 .row {
