@@ -1,0 +1,35 @@
+.project-card {
+  &-image {
+    @include flex;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+
+  &-text-group {
+    padding: 42px 15px;
+    background-color: $ghost-white;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    .card-title {
+      @include text-style(h3, $grey-1);
+      margin-bottom: 30px;
+    }
+
+    .card-subtitle {
+      @include text-style(h3-sub, $grey-1);
+      margin-bottom: 30px;
+    }
+  }
+}
