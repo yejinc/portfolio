@@ -1,5 +1,48 @@
 <template>
   <div class="container">
+    <!-- project-card -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-6 col-lg-7">
+        <div class="project-card-image">
+          <img src="@/assets/images/default/default-7.jpg" alt="Card image" />
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-6 col-lg-5">
+        <div class="project-card-text-group">
+          <h3 class="card-title">title goes here</h3>
+          <h3 class="card-subtitle">And then description goes here.</h3>
+          <button
+            type="button"
+            class="card-button btn-outlined-ic-right btn-24 sm-only"
+          >
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="card-button btn-outlined-ic-right btn-32 md-only"
+          >
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="card-button btn-outlined-ic-right btn-40 lg-only"
+          >
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- button components -->
 
     <div class="row">
@@ -350,49 +393,6 @@
         </div>
         <div class="process-image">
           <img src="@/assets/images/default/default-2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <!-- project-card -->
-
-    <div class="row">
-      <div class="col-sm-4 col-md-6 col-lg-7">
-        <div class="project-card-image">
-          <img src="@/assets/images/default/default-3.jpg" alt="Card image" />
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-6 col-lg-5">
-        <div class="project-card-text-group">
-          <h3 class="card-title">title goes here</h3>
-          <h3 class="card-subtitle">And then description goes here.</h3>
-          <button
-            type="button"
-            class="card-button btn-outlined-ic-right btn-24 sm-only"
-          >
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="card-button btn-outlined-ic-right btn-32 md-only"
-          >
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="card-button btn-outlined-ic-right btn-40 lg-only"
-          >
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
         </div>
       </div>
     </div>
