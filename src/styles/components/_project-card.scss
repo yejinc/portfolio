@@ -31,5 +31,30 @@
       @include text-style(h3-sub, $grey-1);
       margin-bottom: 30px;
     }
+
+    .card-button {
+      .button-content {
+      }
+    }
+  }
+
+  @include responsive(T) {
+    &-image {
+      height: 430px;
+    }
+
+    &-text-group {
+      padding: 54px 65px;
+
+      .card-title {
+        @include text-style(h1);
+        margin-bottom: 42px;
+      }
+
+      .card-subtitle {
+        @include text-style(h1-sub);
+        margin-bottom: 42px;
+      }
+    }
   }
 }
