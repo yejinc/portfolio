@@ -1,5 +1,132 @@
 <template>
   <div class="container">
+    <!-- process components -->
+
+    <!-- process component: basic-process -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-6 col-lg-4">
+        <div class="basic-process-titles">
+          <h2 class="basic-process-title">design system</h2>
+          <p class="basic-process-desc">
+            To speed up the design process and eliminate inconsistencies, I
+            created a design system and actively used components to manage the
+            project efficiently.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-6 col-lg-8">
+        <div class="basic-process-images">
+          <div class="basic-process-image">
+            <img
+              src="@/assets/images/default/default-6.jpg"
+              alt="basic process image"
+            />
+          </div>
+          <div class="basic-process-image">
+            <img
+              src="@/assets/images/default/default-3.jpg"
+              alt="basic process image"
+            />
+          </div>
+          <div class="basic-process-image">
+            <img
+              src="@/assets/images/default/default-2.jpg"
+              alt="basic process image"
+            />
+          </div>
+          <div class="basic-process-image">
+            <img
+              src="@/assets/images/default/default-1.jpg"
+              alt="basic process image"
+            />
+          </div>
+          <div class="basic-process-image">
+            <img
+              src="@/assets/images/default/default-5.jpg"
+              alt="basic process image"
+            />
+          </div>
+          <div class="basic-process-image">
+            <img
+              src="@/assets/images/default/default-7.jpg"
+              alt="basic process image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- process component : sprint-process -->
+
+    <!-- sprint-process component: mobile & tablet -->
+
+    <div class="row lg-hidden">
+      <div class="col-sm-4 col-md-2">
+        <div class="sprint-process-titles">
+          <h6 class="sprint-process-day">DAY 1 - DAY 2</h6>
+          <h5 class="sprint-process-stage">
+            Understand<br />
+            —<br />
+            Research
+          </h5>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="sprint-process-desc-wrapper">
+          <p class="sprint-process-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            animi natus culpa et ullam nulla cum tempore enim voluptates
+            recusandae, quasi, voluptas amet dignissimos ipsam expedita quis
+            corrupti. Quod iste blanditiis, modi in soluta optio alias ea hic
+            inventore eaque dolore dolorum, ipsum quas totam ullam neque
+            laboriosam ipsam esse?
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="sprint-process-image">
+          <img src="@/assets/images/default/default-8.jpg" alt="" />
+        </div>
+        <div class="sprint-process-image">
+          <img src="@/assets/images/default/default-2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- sprint-process component: deesktop -->
+
+    <div class="row lg-only">
+      <div class="col-lg-4">
+        <div class="sprint-process-titles">
+          <h6 class="sprint-process-day">DAY 1 - DAY 2</h6>
+          <h5 class="sprint-process-stage">
+            Understand<br />
+            —<br />
+            Research
+          </h5>
+        </div>
+        <div class="sprint-process-desc-wrapper">
+          <p class="sprint-process-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            animi natus culpa et ullam nulla cum tempore enim voluptates
+            recusandae, quasi, voluptas amet dignissimos ipsam expedita quis
+            corrupti. Quod iste blanditiis, modi in soluta optio alias ea hic
+            inventore eaque dolore dolorum, ipsum quas totam ullam neque
+            laboriosam ipsam esse?
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="sprint-process-image">
+          <img src="@/assets/images/default/default-8.jpg" alt="" />
+        </div>
+        <div class="sprint-process-image">
+          <img src="@/assets/images/default/default-2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
     <!-- project-card -->
 
     <div class="row">
@@ -329,76 +456,6 @@
         <div class="blank-column"></div>
       </div>
     </div>
-
-    <!-- process -->
-
-    <!-- process component: mobile & tablet -->
-
-    <div class="row lg-hidden">
-      <div class="col-sm-4 col-md-2">
-        <div class="process-titles">
-          <h6 class="process-day">DAY 1 - DAY 2</h6>
-          <h5 class="process-stage">
-            Understand<br />
-            —<br />
-            Research
-          </h5>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-4">
-        <div class="process-desc-wrapper">
-          <p class="process-desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            animi natus culpa et ullam nulla cum tempore enim voluptates
-            recusandae, quasi, voluptas amet dignissimos ipsam expedita quis
-            corrupti. Quod iste blanditiis, modi in soluta optio alias ea hic
-            inventore eaque dolore dolorum, ipsum quas totam ullam neque
-            laboriosam ipsam esse?
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="process-image">
-          <img src="@/assets/images/default/default-8.jpg" alt="" />
-        </div>
-        <div class="process-image">
-          <img src="@/assets/images/default/default-2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <!-- process component: deesktop -->
-
-    <div class="row lg-only">
-      <div class="col-lg-4">
-        <div class="process-titles">
-          <h6 class="process-day">DAY 1 - DAY 2</h6>
-          <h5 class="process-stage">
-            Understand<br />
-            —<br />
-            Research
-          </h5>
-        </div>
-        <div class="process-desc-wrapper">
-          <p class="process-desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            animi natus culpa et ullam nulla cum tempore enim voluptates
-            recusandae, quasi, voluptas amet dignissimos ipsam expedita quis
-            corrupti. Quod iste blanditiis, modi in soluta optio alias ea hic
-            inventore eaque dolore dolorum, ipsum quas totam ullam neque
-            laboriosam ipsam esse?
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="process-image">
-          <img src="@/assets/images/default/default-8.jpg" alt="" />
-        </div>
-        <div class="process-image">
-          <img src="@/assets/images/default/default-2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -427,7 +484,7 @@ export default {
   background-repeat: no-repeat; */
 }
 
-.process {
+.sprint-process {
   @include column-flex;
 }
 </style>
