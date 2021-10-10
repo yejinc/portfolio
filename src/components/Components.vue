@@ -10,14 +10,17 @@
       </div>
       <div class="col-sm-4 col-md-6 col-lg-5">
         <div class="project-card-text-group">
-          <h3 class="card-title">title goes here</h3>
-          <h3 class="card-subtitle">And then description goes here.</h3>
+          <h3 class="card-title">design ideas worth spreading</h3>
+          <h3 class="card-subtitle">
+            TEDxSeoul is a program of local, self-organized events that bring
+            people to share a TED-like experience.
+          </h3>
           <button
             type="button"
             class="card-button btn-outlined-ic-right btn-24 sm-only"
           >
             <span class="button-content">
-              button
+              discover more
               <i class="ic-arrow-sm"></i>
             </span>
           </button>
@@ -26,7 +29,7 @@
             class="card-button btn-outlined-ic-right btn-32 md-only"
           >
             <span class="button-content">
-              button
+              discover more
               <i class="ic-arrow-sm"></i>
             </span>
           </button>
@@ -35,7 +38,7 @@
             class="card-button btn-outlined-ic-right btn-40 lg-only"
           >
             <span class="button-content">
-              button
+              discover more
               <i class="ic-arrow-sm"></i>
             </span>
           </button>
