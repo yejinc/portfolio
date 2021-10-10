@@ -2,7 +2,7 @@
   @include inline-flex;
   padding: 0 16px;
   font-weight: 700;
-  border-radius: 2px;
+  border-radius: $radius-2;
 
   .button-content {
     @include inline-flex;
