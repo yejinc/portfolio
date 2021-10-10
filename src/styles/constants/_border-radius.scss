@@ -1,3 +1,12 @@
-$radius-sm: 2px;
-$radius-md: 4px;
-$radius-left-only: 4px 0 0 4px;
+$radius-2: 2px;
+$radius-4: 4px;
+
+$radius-top-only-2: 2px 2px 0 0;
+$radius-right-only-2: 0 2px 2px 0;
+$radius-bottom-only-2: 0 0 2px 2px;
+$radius-left-only-2: 2px 0 0 2px;
+
+$radius-top-only-4: 4px 4px 0 0;
+$radius-right-only-4: 0 4px 4px 0;
+$radius-bottom-only-4: 0 0 4px 4px;
+$radius-left-only-4: 4px 0 0 4px;
