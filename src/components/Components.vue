@@ -6,7 +6,7 @@
 
     <div class="row">
       <div class="col-sm-4 col-md-6 col-lg-4">
-        <div class="basic-process-titles">
+        <div class="basic-process-texts">
           <h2 class="basic-process-title">design system</h2>
           <p class="basic-process-desc">
             To speed up the design process and eliminate inconsistencies, I
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="col-sm-4 col-md-6 col-lg-8">
-        <div class="basic-process-images">
+        <div class="basic-process-image-group">
           <div class="basic-process-image">
             <img
               src="@/assets/images/default/default-6.jpg"
@@ -49,7 +49,7 @@
           </div>
           <div class="basic-process-image">
             <img
-              src="@/assets/images/default/default-7.jpg"
+              src="@/assets/images/default/default-8.jpg"
               alt="basic process image"
             />
           </div>
