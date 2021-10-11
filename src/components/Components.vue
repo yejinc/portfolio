@@ -1,5 +1,18 @@
 <template>
   <div class="container">
+    <!-- tag modules -->
+
+    <div class="tags">
+      <div class="tag-group-32">
+        <strong class="user-card-tag tag-32">#WorkinStudent</strong>
+        <strong class="links-tag tag-32">keyword</strong>
+      </div>
+      <div class="tag-group-40">
+        <strong class="user-card-tag tag-40">#Developer</strong>
+        <strong class="links-tag tag-40">keyword</strong>
+      </div>
+    </div>
+
     <!-- button modules -->
 
     <div class="row">
