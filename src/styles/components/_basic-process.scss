@@ -37,4 +37,32 @@
       overflow: hidden;
     }
   }
+
+  @include responsive(T) {
+    &-texts {
+      margin-bottom: 180px;
+    }
+
+    &-title {
+      @include text-style(h1);
+    }
+
+    &-image {
+      margin-bottom: 84px;
+    }
+  }
+
+  @include responsive(D) {
+    &-texts {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      @include text-style(desktop-h1);
+    }
+
+    &-image {
+      margin-bottom: 84px;
+    }
+  }
 }
