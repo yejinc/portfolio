@@ -96,6 +96,61 @@
 
     <!-- card components -->
 
+    <!-- card component: user card -->
+
+    <div class="row">
+      <div class="user-card">
+        <div class="user-card-header">
+          <div class="header-image">
+            <img src="@/assets/images/default/default-1.jpg" alt="user image" />
+          </div>
+
+          <!-- keywords in mobile -->
+          <div class="header-keywords-sm sm-only">
+            <strong class="user-card-tag tag-32">#WorkinStudent</strong>
+            <strong class="user-card-tag tag-32">#SelfAwareness</strong>
+          </div>
+
+          <!-- keywords in tablet & desktop -->
+
+          <div class="header-keywords-md sm-hidden">
+            <strong class="user-card-tag tag-40">#WorkinStudent</strong>
+            <strong class="user-card-tag tag-40">#BurnOut</strong>
+            <strong class="user-card-tag tag-40">#SelfAwareness</strong>
+          </div>
+        </div>
+
+        <div class="user-card-contents">
+          <div class="contents-story">
+            <h5 class="story-title">Story</h5>
+            <p class="story-desc">
+              “With my busy schedule, I easily get exhausted, yet I have to work
+              to support my life and tuition. To figure out how my energy level
+              fluctuates, I want to start recording and see if it has patterns.
+              I heard that every person has their own biological prime time, and
+              I want to figure out what is mine.”
+            </p>
+          </div>
+
+          <div class="contents-case">
+            <h5 class="case-title">case</h5>
+            <p class="case-desc">
+              Widget centre → Setting presets → Check in → Start recording →
+              Check out → Check today’s status
+            </p>
+          </div>
+
+          <div class="contents-flow">
+            <h5 class="flow-title">Flow</h5>
+            <p class="flow-desc">
+              Widget → Check in → Notification → Record → Check out →
+              Home(status)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- card component: project card -->
 
     <div class="row">
