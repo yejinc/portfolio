@@ -210,7 +210,7 @@
 
 @mixin text-style-desktop-caption() {
   font-family: $font-family-body;
-  font-weight: $font-weight-body;
+  font-weight: $font-weight-body-bold;
   font-size: $desktop-font-size-caption;
   line-height: $desktop-font-height-caption;
   letter-spacing: $desktop-font-spacing-caption;
