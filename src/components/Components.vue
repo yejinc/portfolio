@@ -1,5 +1,132 @@
 <template>
   <div class="container">
+    <!-- button modules -->
+
+    <div class="row">
+      <div class="buttons">
+        <div class="btn-group-24">
+          <button type="button" class="btn-outlined-ic-right btn-24">
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-outlined btn-24">
+            <span class="button-content">
+              button
+            </span>
+          </button>
+          <button type="button" class="btn-filled-ic-right btn-24">
+            <span class="button-content">
+              button 24 filled
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-filled btn-24">
+            <span class="button-content">
+              button 24 filled
+            </span>
+          </button>
+        </div>
+        <div class="btn-group-32">
+          <button type="button" class="btn-outlined-ic-right btn-32">
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-outlined btn-32">
+            <span class="button-content">
+              button
+            </span>
+          </button>
+          <button type="button" class="btn-filled-ic-right btn-32">
+            <span class="button-content">
+              button 32 filled
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-filled btn-32">
+            <span class="button-content">
+              button 32 filled
+            </span>
+          </button>
+        </div>
+        <div class="btn-group-40">
+          <button type="button" class="btn-outlined-ic-right btn-40">
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-outlined btn-40">
+            <span class="button-content">
+              button
+            </span>
+          </button>
+          <button type="button" class="btn-filled-ic-right btn-40">
+            <span class="button-content">
+              button 40 filled
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-filled btn-40">
+            <span class="button-content">
+              button 40 filled
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- card components -->
+
+    <!-- card component: project card -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-6 col-lg-7">
+        <div class="project-card-image">
+          <img src="@/assets/images/default/default-7.jpg" alt="Card image" />
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-6 col-lg-5">
+        <div class="project-card-text-group">
+          <h3 class="card-title">design ideas worth spreading</h3>
+          <h3 class="card-subtitle">
+            TEDxSeoul is a program of local, self-organized events that bring
+            people to share a TED-like experience.
+          </h3>
+          <button
+            type="button"
+            class="card-button btn-outlined-ic-right btn-24 sm-only"
+          >
+            <span class="button-content">
+              discover more
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="card-button btn-outlined-ic-right btn-32 md-only"
+          >
+            <span class="button-content">
+              discover more
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="card-button btn-outlined-ic-right btn-40 lg-only"
+          >
+            <span class="button-content">
+              discover more
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- process components -->
 
     <!-- process component: basic-process -->
@@ -123,131 +250,6 @@
         </div>
         <div class="sprint-process-image">
           <img src="@/assets/images/default/default-2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <!-- project-card -->
-
-    <div class="row">
-      <div class="col-sm-4 col-md-6 col-lg-7">
-        <div class="project-card-image">
-          <img src="@/assets/images/default/default-7.jpg" alt="Card image" />
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-6 col-lg-5">
-        <div class="project-card-text-group">
-          <h3 class="card-title">design ideas worth spreading</h3>
-          <h3 class="card-subtitle">
-            TEDxSeoul is a program of local, self-organized events that bring
-            people to share a TED-like experience.
-          </h3>
-          <button
-            type="button"
-            class="card-button btn-outlined-ic-right btn-24 sm-only"
-          >
-            <span class="button-content">
-              discover more
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="card-button btn-outlined-ic-right btn-32 md-only"
-          >
-            <span class="button-content">
-              discover more
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="card-button btn-outlined-ic-right btn-40 lg-only"
-          >
-            <span class="button-content">
-              discover more
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- button components -->
-
-    <div class="row">
-      <div class="buttons">
-        <div class="btn-group-24">
-          <button type="button" class="btn-outlined-ic-right btn-24">
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-outlined btn-24">
-            <span class="button-content">
-              button
-            </span>
-          </button>
-          <button type="button" class="btn-filled-ic-right btn-24">
-            <span class="button-content">
-              button 24 filled
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-filled btn-24">
-            <span class="button-content">
-              button 24 filled
-            </span>
-          </button>
-        </div>
-        <div class="btn-group-32">
-          <button type="button" class="btn-outlined-ic-right btn-32">
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-outlined btn-32">
-            <span class="button-content">
-              button
-            </span>
-          </button>
-          <button type="button" class="btn-filled-ic-right btn-32">
-            <span class="button-content">
-              button 32 filled
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-filled btn-32">
-            <span class="button-content">
-              button 32 filled
-            </span>
-          </button>
-        </div>
-        <div class="btn-group-40">
-          <button type="button" class="btn-outlined-ic-right btn-40">
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-outlined btn-40">
-            <span class="button-content">
-              button
-            </span>
-          </button>
-          <button type="button" class="btn-filled-ic-right btn-40">
-            <span class="button-content">
-              button 40 filled
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-filled btn-40">
-            <span class="button-content">
-              button 40 filled
-            </span>
-          </button>
         </div>
       </div>
     </div>
@@ -398,7 +400,7 @@
       </div>
     </div>
 
-    <!-- hmw -->
+    <!-- hmw component-->
 
     <div class="row">
       <div class="col-sm-4">
@@ -410,7 +412,7 @@
       </div>
     </div>
 
-    <!-- introduction -->
+    <!-- introduction component -->
 
     <div class="row">
       <div class="col-md-1 md-only" aria-hidden="true">
