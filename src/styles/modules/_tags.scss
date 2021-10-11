@@ -1,0 +1,38 @@
+%tag-base {
+  @include inline-flex;
+  padding: 0 16px;
+  border-radius: $radius-2;
+}
+
+// tag size
+
+.tag-32 {
+  height: 32px;
+}
+
+.tag-40 {
+  height: 40px;
+}
+
+// tag style: user-card
+
+.user-card-tag {
+  @extend %tag-base;
+  background-color: $grey-1;
+
+  &.tag-32 {
+    @include text-style(caption, $white);
+  }
+
+  &.tag-40 {
+    @include text-style(desktop-caption, $white);
+  }
+}
+
+// tag style: links
+
+.links-tag {
+  @extend %tag-base;
+  @include text-style(link, $grey-5);
+  background-color: $grey-2;
+}
