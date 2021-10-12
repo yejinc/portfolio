@@ -100,56 +100,71 @@
 
     <div class="row">
       <div class="col-sm-4">
-        <div class="user-card">
-          <div class="user-card-header">
-            <div class="header-image">
-              <img
-                src="@/assets/images/default/default-1.jpg"
-                alt="user image"
-              />
+        <div class="user-card-wrapper">
+          <h4 class="user-card-name">Danielle, 21</h4>
+
+          <div class="user-card">
+            <div class="user-card-header">
+              <div class="header-image">
+                <img
+                  src="@/assets/images/default/default-1.jpg"
+                  alt="user image"
+                />
+              </div>
+
+              <!-- keywords in mobile -->
+              <div class="header-keywords-sm sm-only">
+                <strong class="user-card-tag tag-32">#WorkinStudent</strong>
+                <strong class="user-card-tag tag-32">#SelfAwareness</strong>
+              </div>
+
+              <!-- keywords in tablet & desktop -->
+
+              <div class="header-keywords-md sm-hidden">
+                <strong class="user-card-tag tag-40">#WorkinStudent</strong>
+                <strong class="user-card-tag tag-40">#BurnOut</strong>
+                <strong class="user-card-tag tag-40">#SelfAwareness</strong>
+              </div>
             </div>
 
-            <!-- keywords in mobile -->
-            <div class="header-keywords-sm sm-only">
-              <strong class="user-card-tag tag-32">#WorkinStudent</strong>
-              <strong class="user-card-tag tag-32">#SelfAwareness</strong>
-            </div>
+            <div class="user-card-contents">
+              <div class="contents-story">
+                <h5 class="contents-title">Story</h5>
+                <p class="contents-desc sm-hidden">
+                  Danielle is a senior college student and also a freelancer.
+                  She has been living with her hectic schedule for three years,
+                  and one day she felt like she can’t do anything anymore. While
+                  trying to figure out what is happening, Danielle started
+                  researching physical/mental health-related information. She
+                  then found it was burnout she was experiencing, and it was
+                  because she didn’t much care about time management. So, she
+                  decided to know when is her best time to work and rest by
+                  measuring her energy level for a while.
+                </p>
+                <p class="contents-quote">
+                  “With my busy schedule, I easily get exhausted, yet I have to
+                  work to support my life and tuition. To figure out how my
+                  energy level fluctuates, I want to start recording and see if
+                  it has patterns. I heard that every person has their own
+                  biological prime time, and I want to figure out what is mine.”
+                </p>
+              </div>
 
-            <!-- keywords in tablet & desktop -->
+              <div class="contents-case">
+                <h5 class="contents-title">case</h5>
+                <p class="contents-desc">
+                  Widget centre ⟶ Setting presets ⟶ Check in ⟶ Start recording ⟶
+                  Check out ⟶ Check today’s status
+                </p>
+              </div>
 
-            <div class="header-keywords-md sm-hidden">
-              <strong class="user-card-tag tag-40">#keyword</strong>
-              <strong class="user-card-tag tag-40">#keyword</strong>
-              <strong class="user-card-tag tag-40">#keyword</strong>
-            </div>
-          </div>
-
-          <div class="user-card-contents">
-            <div class="contents-story">
-              <h5 class="contents-title">Story</h5>
-              <p class="contents-quote">
-                “With my busy schedule, I easily get exhausted, yet I have to
-                work to support my life and tuition. To figure out how my energy
-                level fluctuates, I want to start recording and see if it has
-                patterns. I heard that every person has their own biological
-                prime time, and I want to figure out what is mine.”
-              </p>
-            </div>
-
-            <div class="contents-case">
-              <h5 class="contents-title">case</h5>
-              <p class="contents-desc">
-                Widget centre ⟶ Setting presets ⟶ Check in ⟶ Start recording ⟶
-                Check out ⟶ Check today’s status
-              </p>
-            </div>
-
-            <div class="contents-flow">
-              <h5 class="contents-title">Flow</h5>
-              <p class="contents-desc">
-                Widget ⟶ Check in ⟶ Notification ⟶ Record ⟶ Check out ⟶
-                Home(status)
-              </p>
+              <div class="contents-flow">
+                <h5 class="contents-title">Flow</h5>
+                <p class="contents-desc">
+                  Widget ⟶ Check in ⟶ Notification ⟶ Record ⟶ Check out ⟶
+                  Home(status)
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -559,9 +574,5 @@ export default {
   /* background-image: url('https://images.unsplash.com/photo-1546026423-cc4642628d2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHVuZGVyd2F0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60');
   background-size: cover;
   background-repeat: no-repeat; */
-}
-
-.sprint-process {
-  @include column-flex;
 }
 </style>

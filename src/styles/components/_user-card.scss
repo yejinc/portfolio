@@ -7,6 +7,11 @@
   border-radius: $radius-4;
   background-color: $user-card-bgc;
 
+  &-name {
+    @include text-style(h4, $grey-1);
+    margin-bottom: 30px;
+  }
+
   &-header {
     width: 100%;
     margin-bottom: 42px;
@@ -68,6 +73,11 @@
   @include responsive(T) {
     padding: 100px 60px;
 
+    &-name {
+      @include text-style(h2);
+      margin-bottom: 60px;
+    }
+
     &-header {
       .header {
         &-image {
@@ -96,6 +106,10 @@
 
   @include responsive(D) {
     flex-direction: row;
+
+    &-name {
+      @include text-style(desktop-h2);
+    }
 
     &-header {
       height: 100%;
