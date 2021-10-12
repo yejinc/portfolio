@@ -16,8 +16,9 @@
         @include flex;
         width: 100%;
         height: 200px;
-        overflow: hidden;
         margin-bottom: 24px;
+        overflow: hidden;
+        border-radius: $radius-2;
 
         img {
           display: block;
@@ -31,12 +32,14 @@
 
       &-keywords-sm {
         @include flex(between);
+        width: 100%;
         padding: 0 15px;
       }
     }
   }
 
   &-contents {
+    @include column-flex;
     padding: 0 15px;
 
     .contents {
@@ -58,6 +61,71 @@
 
       &-desc {
         @include text-style(body, $grey-1);
+      }
+    }
+  }
+
+  @include responsive(T) {
+    padding: 100px 60px;
+
+    &-header {
+      .header {
+        &-image {
+          height: 380px;
+          border-radius: $radius-2;
+        }
+
+        &-keywords-md {
+          @include flex(between);
+          width: 100%;
+          padding: 0 90px;
+        }
+      }
+    }
+
+    &-contents {
+      padding: 0;
+
+      .contents {
+        &-quote {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    flex-direction: row;
+
+    &-header {
+      height: 100%;
+      margin-bottom: 0;
+      margin-right: 40px;
+
+      .header {
+        &-image {
+          width: 380px;
+          height: 100%;
+          align-self: stretch;
+          flex-grow: 1;
+        }
+
+        &-keywords-md {
+          padding: 0;
+          flex-grow: 0;
+        }
+      }
+    }
+
+    &-contents {
+      .contents {
+        &-title {
+          @include text-style(desktop-h5);
+        }
+
+        &-quote {
+          @include text-style(desktop-h4-sub);
+        }
       }
     }
   }
