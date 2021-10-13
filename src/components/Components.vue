@@ -5,27 +5,36 @@
     <!-- card component: link card -->
 
     <div class="row">
-      <div class="link-card">
-        <div class="card-top">
-          <div class="top-icon">
-            <lottie-player
-              src="https://assets7.lottiefiles.com/packages/lf20_bpfzqkha.json"
-              background="transparent"
-              speed="1"
-              style="width: 200px; height: 200px;"
-              loop
-              autoplay
-            ></lottie-player>
+      <div class="col-sm-4 col-md-6">
+        <div class="link-card">
+          <div class="card-top">
+            <div class="top-icon">
+              <lottie-player
+                src="https://assets7.lottiefiles.com/packages/lf20_bpfzqkha.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <h6 class="top-name">link name</h6>
           </div>
-          <h6 class="top-name">link name</h6>
-        </div>
-        <div class="card-contents">
-          <p class="contents-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            tenetur.
-          </p>
-          <strong class="links-tag tag-32 sm-only">keyword</strong>
-          <strong class="links-tag tag-40 sm-hidden">keyword</strong>
+          <div class="card-contents">
+            <p class="contents-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              tenetur.
+            </p>
+            <div class="contents-tags-sm sm-only">
+              <strong class="links-tag tag-32">keyword</strong>
+              <strong class="links-tag tag-32">keyword</strong>
+            </div>
+
+            <div class="contents-tags-md sm-hidden">
+              <strong class="links-tag tag-40">keyword</strong>
+              <strong class="links-tag tag-40">keyword</strong>
+              <strong class="links-tag tag-40">keyword</strong>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -644,7 +653,7 @@ export default {
 
 <style lang="scss">
 .container {
-  background-color: $grey-4;
+  background-color: $main-dark-purple;
 }
 
 .row {
