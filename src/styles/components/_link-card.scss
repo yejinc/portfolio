@@ -6,48 +6,46 @@
   backdrop-filter: $bg-blur-16;
   background-color: rgba($ghost-white, 0.2);
 
-  .card {
-    &-top {
-      @include flex(start);
-      padding: 6px 36px 6px + 2px 32px;
-      background-color: $link-card-theme-color;
+  .card-top {
+    @include flex(start);
+    padding: 6px 36px 6px + 2px 32px;
+    background-color: $link-card-theme-color;
 
-      .top-icon {
-        @include flex;
-        width: 52px;
-        height: 52px;
-        margin-right: 16px;
-        border-radius: $radius-2;
-        background-color: $ghost-white;
+    .top-icon {
+      @include flex;
+      width: 52px;
+      height: 52px;
+      margin-right: 16px;
+      border-radius: $radius-2;
+      background-color: $ghost-white;
 
-        lottie-player {
-          width: 48px;
-          height: 48px;
-        }
-      }
-      .top-name {
-        @include text-style(h6, $ghost-white);
+      lottie-player {
+        width: 48px;
+        height: 48px;
       }
     }
+    .top-name {
+      @include text-style(h6, $ghost-white);
+    }
+  }
 
-    &-contents {
-      @include column-flex(center, start);
-      padding: 15px 24px;
+  .card-contents {
+    @include column-flex(center, start);
+    padding: 15px 24px;
 
-      .contents-text {
-        @include text-style(body, $ghost-white);
-        margin-bottom: 18px;
-      }
+    .contents-text {
+      @include text-style(body, $ghost-white);
+      margin-bottom: 18px;
+    }
 
-      .contents-tags-sm {
-        @include flex(start);
+    .contents-tags-sm {
+      @include flex(start);
 
-        .links-tag {
-          margin-right: 12px;
+      .links-tag {
+        margin-right: 12px;
 
-          &:last-child {
-            margin-right: 0;
-          }
+        &:last-child {
+          margin-right: 0;
         }
       }
     }
