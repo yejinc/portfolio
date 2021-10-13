@@ -1,5 +1,31 @@
 <template>
   <div class="container">
+    <!-- feature -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-3 col-lg-7">
+        <div class="feature-prototype">
+          <iframe
+            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5a"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-5">
+        <div class="feature-texts">
+          <h4 class="feature-texts-title">🏷 Personalised content suggestion</h4>
+          <p class="feature-texts-desc">
+            Empower the users to take control over their preferences to get
+            suitable movie relevant suggestions effortlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- tag modules -->
 
     <div class="row">
