@@ -1,157 +1,34 @@
 <template>
   <div class="container">
-    <!-- feature -->
-
-    <div class="row">
-      <div class="col-sm-4 col-md-3 col-lg-7">
-        <div class="feature-prototype">
-          <iframe
-            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5&aautoplay=1&loop=1&autopause=0&muted=1&background=1"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            muted
-            loop
-          ></iframe>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3 col-lg-5">
-        <div class="feature-texts">
-          <h4 class="feature-texts-title">
-            🏷 <br />Personalised content suggestion
-          </h4>
-          <p class="feature-texts-desc">
-            Empower the users to take control over their preferences to get
-            suitable movie relevant suggestions effortlessly.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- reversed feature -->
-
-    <div class="row">
-      <div class="col-sm-4 col-md-3 col-lg-5">
-        <div class="feature-reversed-texts">
-          <h4 class="feature-reversed-texts-title">
-            🏷 <br />Personalised content suggestion
-          </h4>
-          <p class="feature-reversed-texts-desc">
-            Empower the users to take control over their preferences to get
-            suitable movie relevant suggestions effortlessly.
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3 col-lg-7">
-        <div class="feature-reversed-prototype">
-          <iframe
-            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5a&autoplay=1&loop=1&autopause=0&muted=1"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            allowautoplay
-            muted
-            loop
-          ></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- tag modules -->
-
-    <div class="row">
-      <div class="tags">
-        <div class="tag-group-32">
-          <strong class="user-card-tag tag-32">#WorkinStudent</strong>
-          <strong class="links-tag tag-32">keyword</strong>
-        </div>
-        <div class="tag-group-40">
-          <strong class="user-card-tag tag-40">#Developer</strong>
-          <strong class="links-tag tag-40">keyword</strong>
-        </div>
-      </div>
-    </div>
-
-    <!-- button modules -->
-
-    <div class="row">
-      <div class="buttons">
-        <div class="btn-group-24">
-          <button type="button" class="btn-outlined-ic-right btn-24">
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-outlined btn-24">
-            <span class="button-content">
-              button
-            </span>
-          </button>
-          <button type="button" class="btn-filled-ic-right btn-24">
-            <span class="button-content">
-              button 24 filled
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-filled btn-24">
-            <span class="button-content">
-              button 24 filled
-            </span>
-          </button>
-        </div>
-        <div class="btn-group-32">
-          <button type="button" class="btn-outlined-ic-right btn-32">
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-outlined btn-32">
-            <span class="button-content">
-              button
-            </span>
-          </button>
-          <button type="button" class="btn-filled-ic-right btn-32">
-            <span class="button-content">
-              button 32 filled
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-filled btn-32">
-            <span class="button-content">
-              button 32 filled
-            </span>
-          </button>
-        </div>
-        <div class="btn-group-40">
-          <button type="button" class="btn-outlined-ic-right btn-40">
-            <span class="button-content">
-              button
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-outlined btn-40">
-            <span class="button-content">
-              button
-            </span>
-          </button>
-          <button type="button" class="btn-filled-ic-right btn-40">
-            <span class="button-content">
-              button 40 filled
-              <i class="ic-arrow-sm"></i>
-            </span>
-          </button>
-          <button type="button" class="btn-filled btn-40">
-            <span class="button-content">
-              button 40 filled
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <!-- card components -->
+
+    <!-- card component: link card -->
+
+    <div class="row">
+      <div class="link-card">
+        <div class="card-top">
+          <div class="top-icon">
+            <lottie-player
+              src="https://assets7.lottiefiles.com/packages/lf20_bpfzqkha.json"
+              background="transparent"
+              speed="1"
+              style="width: 200px; height: 200px;"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <h6 class="top-name">link name</h6>
+        </div>
+        <div class="card-contents">
+          <p class="contents-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            tenetur.
+          </p>
+          <strong class="links-tag tag-32 sm-only">keyword</strong>
+          <strong class="links-tag tag-40 sm-hidden">keyword</strong>
+        </div>
+      </div>
+    </div>
 
     <!-- card component: user card -->
 
@@ -268,6 +145,157 @@
             <span class="button-content">
               discover more
               <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- feature -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-3 col-lg-7">
+        <div class="feature-prototype">
+          <iframe
+            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5&aautoplay=1&loop=1&autopause=0&muted=1&background=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            muted
+            loop
+          ></iframe>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-5">
+        <div class="feature-texts">
+          <h4 class="feature-texts-title">
+            🏷 <br />Personalised content suggestion
+          </h4>
+          <p class="feature-texts-desc">
+            Empower the users to take control over their preferences to get
+            suitable movie relevant suggestions effortlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- feature-reversed -->
+
+    <div class="row">
+      <div class="col-sm-4 col-md-3 col-lg-5">
+        <div class="feature-reversed-texts">
+          <h4 class="feature-reversed-texts-title">
+            🏷 <br />Personalised content suggestion
+          </h4>
+          <p class="feature-reversed-texts-desc">
+            Empower the users to take control over their preferences to get
+            suitable movie relevant suggestions effortlessly.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-7">
+        <div class="feature-reversed-prototype">
+          <iframe
+            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5a&autoplay=1&loop=1&autopause=0&muted=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            allowautoplay
+            muted
+            loop
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- tag modules -->
+
+    <div class="row">
+      <div class="tags">
+        <div class="tag-group-32">
+          <strong class="user-card-tag tag-32">#WorkinStudent</strong>
+          <strong class="links-tag tag-32">keyword</strong>
+        </div>
+        <div class="tag-group-40">
+          <strong class="user-card-tag tag-40">#Developer</strong>
+          <strong class="links-tag tag-40">keyword</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- button modules -->
+
+    <div class="row">
+      <div class="buttons">
+        <div class="btn-group-24">
+          <button type="button" class="btn-outlined-ic-right btn-24">
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-outlined btn-24">
+            <span class="button-content">
+              button
+            </span>
+          </button>
+          <button type="button" class="btn-filled-ic-right btn-24">
+            <span class="button-content">
+              button 24 filled
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-filled btn-24">
+            <span class="button-content">
+              button 24 filled
+            </span>
+          </button>
+        </div>
+        <div class="btn-group-32">
+          <button type="button" class="btn-outlined-ic-right btn-32">
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-outlined btn-32">
+            <span class="button-content">
+              button
+            </span>
+          </button>
+          <button type="button" class="btn-filled-ic-right btn-32">
+            <span class="button-content">
+              button 32 filled
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-filled btn-32">
+            <span class="button-content">
+              button 32 filled
+            </span>
+          </button>
+        </div>
+        <div class="btn-group-40">
+          <button type="button" class="btn-outlined-ic-right btn-40">
+            <span class="button-content">
+              button
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-outlined btn-40">
+            <span class="button-content">
+              button
+            </span>
+          </button>
+          <button type="button" class="btn-filled-ic-right btn-40">
+            <span class="button-content">
+              button 40 filled
+              <i class="ic-arrow-sm"></i>
+            </span>
+          </button>
+          <button type="button" class="btn-filled btn-40">
+            <span class="button-content">
+              button 40 filled
             </span>
           </button>
         </div>
