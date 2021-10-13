@@ -6,7 +6,7 @@
       <div class="col-sm-4 col-md-3 col-lg-7">
         <div class="feature-prototype">
           <iframe
-            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5a&autoplay=1&loop=1&autopause=0&muted=1&background=1"
+            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5&aautoplay=1&loop=1&autopause=0&muted=1&background=1"
             frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
