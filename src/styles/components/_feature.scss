@@ -41,8 +41,8 @@
     &-texts,
     &-reversed-texts {
       @include column-flex(center, start);
+      padding: 0 45px;
       height: 100%;
-      padding: 0 80px 0 20px;
 
       &-title,
       &-reversed-title {
@@ -59,12 +59,18 @@
 
     &-texts,
     &-reversed-texts {
-      padding: 0 95px 0 0;
-
       &-title,
       &-reversed-title {
         @include text-style(desktop-h3);
       }
+    }
+
+    &-texts {
+      padding: 0 120px 0 0;
+    }
+
+    &-reversed-texts {
+      padding: 0 0 0 120px;
     }
   }
 }
