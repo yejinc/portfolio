@@ -36,7 +36,8 @@
       }
 
       &-keywords-sm {
-        @include flex(between);
+        @include flex;
+        gap: 18px;
         width: 100%;
         padding: 0 15px;
       }
@@ -44,7 +45,7 @@
   }
 
   &-contents {
-    @include column-flex;
+    @include column-flex(center, start);
     padding: 0 15px;
 
     .contents {
@@ -86,7 +87,8 @@
         }
 
         &-keywords-md {
-          @include flex(between);
+          @include flex;
+          gap: 24px;
           width: 100%;
           padding: 0 90px;
         }
@@ -125,6 +127,8 @@
         }
 
         &-keywords-md {
+          @include flex(between);
+          gap: 0;
           padding: 0;
           flex-grow: 0;
         }
