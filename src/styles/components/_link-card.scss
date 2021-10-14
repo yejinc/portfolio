@@ -34,7 +34,7 @@
     padding: 15px 24px;
 
     .contents-text {
-      @include text-style(body, $ghost-white);
+      @include text-style(caption, $ghost-white);
       margin-bottom: 18px;
     }
 
@@ -46,6 +46,34 @@
 
         &:last-child {
           margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    .card-top {
+      padding: 6px 72px 6px + 2px 72px;
+
+      .top-name {
+        @include text-style(desktop-h4);
+      }
+    }
+
+    .card-contents {
+      padding: 24px 75px;
+
+      .contents-text {
+        @include text-style(desktop-caption);
+      }
+
+      .contents-tags-md {
+        .links-tag {
+          margin-right: 24px;
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
