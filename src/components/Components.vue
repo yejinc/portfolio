@@ -70,10 +70,10 @@
               </div>
             </div>
 
-            <div class="user-card-contents">
+            <dl class="user-card-contents">
               <div class="contents-story">
-                <h5 class="contents-title">Story</h5>
-                <p class="contents-desc sm-hidden">
+                <dt class="contents-title">Story</dt>
+                <dd class="contents-desc sm-hidden">
                   Danielle is a senior college student and also a freelancer.
                   She has been living with her hectic schedule for three years,
                   and one day she felt like she can’t do anything anymore. While
@@ -83,32 +83,32 @@
                   because she didn’t much care about time management. So, she
                   decided to know when is her best time to work and rest by
                   measuring her energy level for a while.
-                </p>
-                <p class="contents-quote">
+                </dd>
+                <dd class="contents-quote">
                   “With my busy schedule, I easily get exhausted, yet I have to
                   work to support my life and tuition. To figure out how my
                   energy level fluctuates, I want to start recording and see if
                   it has patterns. I heard that every person has their own
                   biological prime time, and I want to figure out what is mine.”
-                </p>
+                </dd>
               </div>
 
               <div class="contents-case">
-                <h5 class="contents-title">case</h5>
-                <p class="contents-desc">
+                <dt class="contents-title">case</dt>
+                <dd class="contents-desc">
                   Widget centre ⟶ Setting presets ⟶ Check in ⟶ Start recording ⟶
                   Check out ⟶ Check today’s status
-                </p>
+                </dd>
               </div>
 
               <div class="contents-flow">
-                <h5 class="contents-title">Flow</h5>
-                <p class="contents-desc">
+                <dt class="contents-title">Flow</dt>
+                <dd class="contents-desc">
                   Widget ⟶ Check in ⟶ Notification ⟶ Record ⟶ Check out ⟶
                   Home(status)
-                </p>
+                </dd>
               </div>
-            </div>
+            </dl>
           </div>
         </div>
       </div>
@@ -164,9 +164,9 @@
 
     <div class="row">
       <div class="col-sm-4 col-md-3 col-lg-7">
-        <div class="feature-prototype">
+        <div class="feature-prototype" aria-label="prototype of a feature">
           <iframe
-            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5&aautoplay=1&loop=1&autopause=0&muted=1&background=1"
+            src="https://player.vimeo.com/video/152153054?h=fd9ee2ac5&autoplay=1&loop=1&autopause=0&muted=1&background=1"
             frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
