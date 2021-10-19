@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <Footer />
+
     <!-- card components -->
 
     <!-- card component: link card -->
@@ -648,8 +650,14 @@
 </template>
 
 <script>
+import Footer from './Footer.vue'
+
 export default {
-  name: 'Components'
+  name: 'Components',
+
+  components: {
+    Footer
+  }
 }
 </script>
 
