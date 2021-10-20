@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss">
 .footer {
-  margin: 0 -15px;
+  margin: 0 -#{$sm-margin};
   overflow: hidden;
   background-color: $old-lavender;
 
@@ -66,6 +66,10 @@ export default {
     left: -30px;
     height: 60px;
     margin-top: 30px;
+
+    img {
+      display: block;
+    }
   }
 
   &-contents {
@@ -73,16 +77,19 @@ export default {
     background-color: $main-dark-purple;
 
     .contents-header {
+      margin-top: 15px;
+
       h3 {
         @include text-style(h3, $ghost-white);
         mix-blend-mode: difference;
-        margin: 15px 0 40px;
       }
     }
 
     .contents-footer {
       position: relative;
       z-index: $footer-index;
+      margin-top: 40px;
+
       &::after {
         content: '';
         @include pos-center-x;
@@ -95,19 +102,22 @@ export default {
       }
 
       &-links {
-        padding-top: 40px;
+        margin-top: 40px;
 
         .links-item {
-          @include text-style(link, $ghost-white);
           margin-bottom: 12px;
           mix-blend-mode: difference;
           text-align: center;
+
+          a {
+            @include text-style(link, $ghost-white);
+          }
         }
       }
 
       &-captions {
         text-align: center;
-        padding-top: 12px;
+        padding: 12px 0 24px;
 
         .made-with {
           @include text-style(caption, $french-lilac);
@@ -121,9 +131,53 @@ export default {
   }
 
   @include responsive(T) {
-    .contents-header {
-      h3 {
-        @include text-style(desktop-h1);
+    margin: 0 -#{$sm-margin + $md-margin * 2};
+
+    &-wave {
+      margin-top: 50px;
+    }
+
+    &-contents {
+      .contents-header {
+        margin-top: 40px;
+
+        h3 {
+          @include text-style(desktop-h1);
+        }
+      }
+
+      .contents-footer {
+        margin-top: 60px;
+
+        &::after {
+          width: 1200px;
+          height: 1200px;
+        }
+
+        &-links {
+          margin-top: 52px;
+
+          .links-item {
+            margin-bottom: 18px;
+
+            a {
+              @include text-style(desktop-link);
+            }
+          }
+        }
+
+        &-captions {
+          padding: 24px 0;
+
+          .made-with,
+          .copyright {
+            @include text-style(desktop-caption);
+          }
+
+          .made-with {
+            margin-bottom: 6px;
+          }
+        }
       }
     }
   }
