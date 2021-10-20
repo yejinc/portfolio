@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <ProjectNav />
+
     <ProjectFooter />
 
     <Footer />
@@ -652,15 +654,17 @@
 </template>
 
 <script>
-import Footer from './Footer.vue'
-import ProjectFooter from './ProjectFooter.vue'
+import Footer from './layouts/Footer.vue'
+import ProjectFooter from './layouts/ProjectFooter.vue'
+import ProjectNav from './layouts/ProjectNav.vue'
 
 export default {
   name: 'Components',
 
   components: {
     Footer,
-    ProjectFooter
+    ProjectFooter,
+    ProjectNav
   }
 }
 </script>
