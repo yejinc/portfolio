@@ -3,7 +3,17 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="project-nav">
-          <div class="project-nav-next">
+          <button class="project-nav-previous lg-only">
+            <div class="previous-caption">
+              <i class="ic-arrow-md" aria-hidden="true" />
+              <h3 class="previous-caption-text">previous</h3>
+            </div>
+            <div class="previous-project">
+              <h1 class="previous-project-text">tedxseoul</h1>
+            </div>
+          </button>
+
+          <button class="project-nav-next">
             <div class="next-caption">
               <h3 class="next-caption-text">next</h3>
               <i class="ic-arrow-md" aria-hidden="true" />
@@ -11,16 +21,7 @@
             <div class="next-project">
               <h1 class="next-project-text">golden</h1>
             </div>
-          </div>
-          <div class="project-nav-previous lg-only">
-            <div class="previous-caption">
-              <h3 class="previous-caption-text">previous</h3>
-              <i class="ic-arrow-md" aria-hidden="true" />
-            </div>
-            <div class="previous-project">
-              <h1 class="previous-project-text">tedxseoul</h1>
-            </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
@@ -91,6 +92,51 @@ export default {
     &-next {
       &::after {
         left: 50vw;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    @include flex(between);
+    margin: 0 -#{$sm-margin};
+    padding: 0 $lg-unit + $gutter;
+
+    &-previous {
+      @include column-flex(center, start);
+
+      .previous-caption {
+        @include flex;
+        margin-bottom: 30px;
+
+        &-text {
+          @include text-style(h3-sub, $main-coral);
+          margin-left: 32px;
+          text-transform: capitalize;
+          mix-blend-mode: difference;
+        }
+
+        .ic-arrow-md {
+          display: block;
+          font-size: 30px;
+          mix-blend-mode: difference;
+          color: $main-cambridge-blue;
+          transform: rotate(90deg);
+        }
+      }
+
+      .previous-project {
+        &-text {
+          @include text-style(h1, $white);
+          mix-blend-mode: difference;
+        }
+      }
+    }
+
+    &-next {
+      @include column-flex(center, end);
+
+      &::after {
+        left: 6vw;
       }
     }
   }
