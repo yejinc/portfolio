@@ -4,10 +4,9 @@
       <div class="col-sm-4">
         <div class="project-footer">
           <div class="project-footer-links">
+            <h6 class="list-title">social links</h6>
+
             <ul class="links-list">
-              <li class="list-title">
-                <h6>social links</h6>
-              </li>
               <li class="list-item">
                 <a href="#"> EMAIL </a>
               </li>
@@ -64,19 +63,17 @@ export default {
   background-color: $dutch-white;
 
   &-links {
+    .list-title {
+      @include text-style(link, $grey-3);
+      margin-bottom: 24px;
+    }
+
     .links-list {
+      @include column-flex;
       margin-bottom: 30px;
 
-      .list-title {
-        margin-bottom: 24px;
-
-        h6 {
-          @include text-style(link, $grey-3);
-        }
-      }
-
       .list-item {
-        margin-bottom: 24px;
+        margin-bottom: 32px;
 
         a {
           @include text-style(link, $dutch-white);
@@ -107,6 +104,40 @@ export default {
       .made-with,
       .copyright {
         @include text-style(caption, $grey-1);
+      }
+    }
+  }
+
+  @include responsive(T) {
+    height: 300px;
+    margin: 0 -#{$sm-margin + $md-margin * 2};
+
+    &-links {
+      .list-title {
+        @include text-style(desktop-link);
+        margin-bottom: 30px;
+      }
+
+      .links-list {
+        flex-direction: row;
+
+        .list-item {
+          margin-bottom: 0;
+          margin-right: 42px;
+
+          a {
+            @include text-style(desktop-link);
+          }
+        }
+      }
+    }
+
+    &-captions {
+      .captions-list {
+        .made-with,
+        .copyright {
+          @include text-style(desktop-caption);
+        }
       }
     }
   }
