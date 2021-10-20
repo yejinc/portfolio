@@ -181,5 +181,9 @@ export default {
       }
     }
   }
+
+  @include responsive(D) {
+    margin: 0 -#{$sm-margin};
+  }
 }
 </style>
