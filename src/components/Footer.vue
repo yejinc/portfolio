@@ -69,6 +69,8 @@ export default {
 
     img {
       display: block;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
