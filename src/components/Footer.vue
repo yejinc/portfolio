@@ -11,35 +11,36 @@
         </div>
 
         <div class="footer-contents">
-          <h3 class="contents-title">Let’s chat</h3>
+          <div class="contents-header">
+            <h3>Let’s chat</h3>
+          </div>
 
-          <ul class="contents-links">
-            <li class="links-item">
-              <a href="#">Email</a>
-            </li>
-            <li class="links-item">
-              <a href="#">LinkedIn</a>
-            </li>
-            <li class="links-item">
-              <a href="#">Medium</a>
-            </li>
-            <li class="links-item">
-              <a href="#">Dribbble</a>
-            </li>
-            <li class="links-item">
-              <a href="#">Twitter</a>
-            </li>
-          </ul>
+          <div class="contents-footer">
+            <ul class="contents-footer-links">
+              <li class="links-item">
+                <a href="#">Email</a>
+              </li>
+              <li class="links-item">
+                <a href="#">LinkedIn</a>
+              </li>
+              <li class="links-item">
+                <a href="#">Medium</a>
+              </li>
+              <li class="links-item">
+                <a href="#">Dribbble</a>
+              </li>
+              <li class="links-item">
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
 
-          <p class="footer-captions">
-            Made with lots of Kombucha🍹 and Love 💜
-            <br />
-            @2020 Yejin Cho・Self Coded
-          </p>
-        </div>
-
-        <div class="footer-circle-wrapper">
-          <span class="circle" />
+            <ul class="contents-footer-captions">
+              <li class="made-with">
+                Made with lots of Kombucha🍹 and Love 💜
+              </li>
+              <li class="copyright">@2020 Yejin Cho ・ Self Coded</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -52,4 +53,68 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.footer {
+  overflow: hidden;
+  background-color: $old-lavender;
+
+  &-wave {
+    position: relative;
+    left: -30px;
+    height: 60px;
+    margin-top: 30px;
+  }
+
+  &-contents {
+    @include column-flex;
+    background-color: $main-dark-purple;
+
+    .contents-header {
+      h3 {
+        @include text-style(h3, $ghost-white);
+        mix-blend-mode: difference;
+        margin: 15px 0 40px;
+      }
+    }
+
+    .contents-footer {
+      position: relative;
+      z-index: $footer-index;
+      &::after {
+        content: '';
+        @include pos-center-x;
+        top: 0;
+        width: 760px;
+        height: 760px;
+        z-index: $footer-circle-bg-index;
+        border-radius: 50%;
+        background-color: $dutch-white;
+      }
+
+      &-links {
+        padding-top: 40px;
+
+        .links-item {
+          @include text-style(link, $ghost-white);
+          margin-bottom: 12px;
+          mix-blend-mode: difference;
+          text-align: center;
+        }
+      }
+
+      &-captions {
+        text-align: center;
+        padding-top: 12px;
+
+        .made-with {
+          @include text-style(caption, $french-lilac);
+        }
+
+        .copyright {
+          @include text-style(caption, $old-lavender);
+        }
+      }
+    }
+  }
+}
+</style>
