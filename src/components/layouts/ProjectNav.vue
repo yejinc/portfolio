@@ -48,7 +48,7 @@ export default {
     &::after {
       content: '';
       @include pos-center-y;
-      left: 120px;
+      left: 40vw;
       width: 600px;
       height: 600px;
       z-index: $footer-circle-bg-index;
@@ -81,6 +81,16 @@ export default {
       &-text {
         @include text-style(h1, $white);
         mix-blend-mode: difference;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    margin: 0 -#{$sm-margin + $md-margin * 2};
+
+    &-next {
+      &::after {
+        left: 50vw;
       }
     }
   }
