@@ -1,45 +1,47 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="footer">
-        <div class="footer-wave">
-          <img
-            src="@/assets/images/landing-footer-wave-bg.svg"
-            alt="Wave graphic"
-            aria-hidden="true"
-          />
-        </div>
-
-        <div class="footer-contents">
-          <div class="contents-header">
-            <h3>Let’s chat</h3>
+      <div class="col-sm-4">
+        <div class="footer">
+          <div class="footer-wave">
+            <img
+              src="@/assets/images/landing-footer-wave-bg.svg"
+              alt="Wave graphic"
+              aria-hidden="true"
+            />
           </div>
 
-          <div class="contents-footer">
-            <ul class="contents-footer-links">
-              <li class="links-item">
-                <a href="#">Email</a>
-              </li>
-              <li class="links-item">
-                <a href="#">LinkedIn</a>
-              </li>
-              <li class="links-item">
-                <a href="#">Medium</a>
-              </li>
-              <li class="links-item">
-                <a href="#">Dribbble</a>
-              </li>
-              <li class="links-item">
-                <a href="#">Twitter</a>
-              </li>
-            </ul>
+          <div class="footer-contents">
+            <div class="contents-header">
+              <h3>Let’s chat</h3>
+            </div>
 
-            <ul class="contents-footer-captions">
-              <li class="made-with">
-                Made with lots of Kombucha🍹 and Love 💜
-              </li>
-              <li class="copyright">@2020 Yejin Cho ・ Self Coded</li>
-            </ul>
+            <div class="contents-footer">
+              <ul class="contents-footer-links">
+                <li class="links-item">
+                  <a href="#">Email</a>
+                </li>
+                <li class="links-item">
+                  <a href="#">LinkedIn</a>
+                </li>
+                <li class="links-item">
+                  <a href="#">Medium</a>
+                </li>
+                <li class="links-item">
+                  <a href="#">Dribbble</a>
+                </li>
+                <li class="links-item">
+                  <a href="#">Twitter</a>
+                </li>
+              </ul>
+
+              <ul class="contents-footer-captions">
+                <li class="made-with">
+                  Made with lots of Kombucha🍹 and Love 💜
+                </li>
+                <li class="copyright">@2020 Yejin Cho ・ Self Coded</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -55,6 +57,7 @@ export default {
 
 <style lang="scss">
 .footer {
+  margin: 0 -15px;
   overflow: hidden;
   background-color: $old-lavender;
 
@@ -113,6 +116,14 @@ export default {
         .copyright {
           @include text-style(caption, $old-lavender);
         }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    .contents-header {
+      h3 {
+        @include text-style(desktop-h1);
       }
     }
   }
