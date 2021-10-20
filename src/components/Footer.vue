@@ -4,7 +4,7 @@
       <div class="footer">
         <div class="footer-wave">
           <img
-            src="@/assets/images/wave-bg.svg"
+            src="@/assets/images/landing-footer-wave-bg.svg"
             alt="Wave graphic"
             aria-hidden="true"
           />
