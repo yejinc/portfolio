@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <ProjectFooter />
+
     <Footer />
 
     <!-- card components -->
@@ -651,12 +653,14 @@
 
 <script>
 import Footer from './Footer.vue'
+import ProjectFooter from './ProjectFooter.vue'
 
 export default {
   name: 'Components',
 
   components: {
-    Footer
+    Footer,
+    ProjectFooter
   }
 }
 </script>
