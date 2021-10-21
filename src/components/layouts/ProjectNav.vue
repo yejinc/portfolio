@@ -51,12 +51,12 @@ export default {
     &::after {
       content: '';
       @include pos-center-y;
-      left: 20vw;
+      left: 40vw;
       width: 600px;
       height: 600px;
       z-index: $footer-circle-bg-index;
       border-radius: 50%;
-      background-color: $icterine;
+      background-color: rgba($icterine, 0.7);
     }
 
     .next-caption {
@@ -95,7 +95,7 @@ export default {
       height: 300px;
 
       &::after {
-        left: 15vw;
+        left: 45vw;
       }
     }
   }
@@ -143,7 +143,7 @@ export default {
       @include column-flex(center, end);
 
       &::after {
-        left: 6vw;
+        left: 25vw;
       }
     }
   }
