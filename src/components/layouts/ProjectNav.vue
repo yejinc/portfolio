@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss">
 .project-nav {
+  @include column-flex;
   margin: 0 -#{$sm-margin};
   overflow: hidden;
   background-color: $black;
@@ -49,7 +50,7 @@ export default {
     &::after {
       content: '';
       @include pos-center-y;
-      left: 40vw;
+      left: 20vw;
       width: 600px;
       height: 600px;
       z-index: $footer-circle-bg-index;
@@ -91,13 +92,14 @@ export default {
 
     &-next {
       &::after {
-        left: 50vw;
+        left: 15vw;
       }
     }
   }
 
   @include responsive(D) {
     @include flex(between);
+    flex-direction: row;
     margin: 0 -#{$sm-margin};
     padding: 0 $lg-unit + $gutter;
 
