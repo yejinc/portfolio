@@ -36,6 +36,9 @@ export default {
 
 <style lang="scss">
 .project-nav {
+  $next-bg-circle-color: $icterine;
+  $previous-bg-circle-color: $dark-sky-blue;
+
   @include column-flex;
   margin: 0 -#{$sm-margin};
   overflow: hidden;
@@ -51,12 +54,19 @@ export default {
     &::after {
       content: '';
       @include pos-center-y;
-      left: 40vw;
+      left: 50vw;
       width: 600px;
       height: 600px;
       z-index: $footer-circle-bg-index;
       border-radius: 50%;
-      background-color: rgba($icterine, 0.7);
+      background-color: rgba($next-bg-circle-color, 0.7);
+      transition: all 450ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &:active {
+      &::after {
+        left: 40vw;
+      }
     }
 
     .next-caption {
@@ -95,7 +105,13 @@ export default {
       height: 300px;
 
       &::after {
-        left: 45vw;
+        left: 55vw;
+      }
+
+      &:active {
+        &::after {
+          left: 45vw;
+        }
       }
     }
   }
@@ -107,9 +123,29 @@ export default {
     padding: 0 $lg-unit + $gutter;
 
     &-previous {
+      @include column-flex(center, start);
+      position: relative;
+      z-index: $footer-index;
       height: 300px;
       width: 100%;
-      @include column-flex(center, start);
+
+      &::after {
+        content: '';
+        @include pos-center-y;
+        right: 35vw;
+        width: 600px;
+        height: 600px;
+        z-index: $footer-circle-bg-index;
+        border-radius: 50%;
+        background-color: rgba($previous-bg-circle-color, 0.7);
+        transition: all 450ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      &:hover {
+        &::after {
+          right: 25vw;
+        }
+      }
 
       .previous-caption {
         @include flex;
@@ -143,7 +179,14 @@ export default {
       @include column-flex(center, end);
 
       &::after {
-        left: 25vw;
+        left: 35vw;
+        transition: all 450ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      &:hover {
+        &::after {
+          left: 25vw;
+        }
       }
     }
   }
