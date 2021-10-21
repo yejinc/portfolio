@@ -45,6 +45,7 @@ export default {
     @include column-flex;
     position: relative;
     z-index: $footer-index;
+    width: 100%;
     height: 314px;
 
     &::after {
@@ -91,6 +92,8 @@ export default {
     margin: 0 -#{$sm-margin + $md-margin * 2};
 
     &-next {
+      height: 300px;
+
       &::after {
         left: 15vw;
       }
@@ -104,6 +107,8 @@ export default {
     padding: 0 $lg-unit + $gutter;
 
     &-previous {
+      height: 300px;
+      width: 100%;
       @include column-flex(center, start);
 
       .previous-caption {
