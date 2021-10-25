@@ -1,10 +1,16 @@
 <template>
   <div class="container">
+    <header class="global-header">
+      <GNB />
+    </header>
+
     <ProjectNav />
 
-    <ProjectFooter />
+    <footer>
+      <ProjectFooter />
 
-    <Footer />
+      <Footer />
+    </footer>
 
     <!-- card components -->
 
@@ -657,6 +663,7 @@
 import Footer from './layouts/Footer.vue'
 import ProjectFooter from './layouts/ProjectFooter.vue'
 import ProjectNav from './layouts/ProjectNav.vue'
+import GNB from './layouts/GNB.vue'
 
 export default {
   name: 'Components',
@@ -664,7 +671,8 @@ export default {
   components: {
     Footer,
     ProjectFooter,
-    ProjectNav
+    ProjectNav,
+    GNB
   }
 }
 </script>
